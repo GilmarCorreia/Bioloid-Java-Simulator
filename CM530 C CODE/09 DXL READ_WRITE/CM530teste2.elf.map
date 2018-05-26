@@ -1,0 +1,1923 @@
+Archive member included because of file (symbol)
+
+stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+                              APP/src/main.o (FLASH_SetLatency)
+stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+                              APP/src/main.o (GPIO_Init)
+stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+                              APP/src/main.o (NVIC_PriorityGroupConfig)
+stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+                              APP/src/main.o (PWR_BackupAccessCmd)
+stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                              APP/src/main.o (RCC_DeInit)
+stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+                              APP/src/main.o (SysTick_SetReload)
+stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                              APP/src/main.o (TIM_TimeBaseInit)
+stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                              APP/src/main.o (USART_StructInit)
+stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+                              stm32f10x_lib/libstm32.a(stm32f10x_pwr.o) (__WFI)
+stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+                              (Reset_Handler)
+c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+                              c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o (atexit)
+c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+                              c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o (exit)
+c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+                              c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o) (_global_impure_ptr)
+c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+                              c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o (__libc_fini_array)
+c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+                              c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o (memset)
+c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+                              c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o) (__register_exitproc)
+c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+                              c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o) (__call_exitprocs)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .init          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .fini          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .init_array    0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .fini_array    0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .eh_frame      0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .jcr           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .ARM.exidx     0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .data          0x00000000        0x0 APP/src/stm32f10x_it.o
+ .bss           0x00000000        0x0 APP/src/stm32f10x_it.o
+ .data          0x00000000        0x0 APP/src/dxl_hal.o
+ .bss           0x00000000        0x0 APP/src/dxl_hal.o
+ .data          0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .data          0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .data          0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .data          0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .data          0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .data          0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .data          0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .data          0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .data          0x00000000        0x0 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .data          0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .bss           0x00000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .rodata        0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .rodata.str1.4
+                0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+ .eh_frame      0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+ .jcr           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+ .text          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+ .data          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+ .bss           0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+ .init          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+ .fini          0x00000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x20000000         0x00010000         xrw
+FLASH            0x08003000         0x0007d000         xr
+FLASHB1          0x00000000         0x00000000         xr
+EXTMEMB0         0x00000000         0x00000000         xr
+EXTMEMB1         0x00000000         0x00000000         xr
+EXTMEMB2         0x00000000         0x00000000         xr
+EXTMEMB3         0x00000000         0x00000000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+LOAD c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+LOAD c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+LOAD APP/src/main.o
+LOAD APP/src/stm32f10x_it.o
+LOAD APP/src/dxl_hal.o
+LOAD APP/src/dynamixel.o
+LOAD stm32f10x_lib/libstm32.a
+START GROUP
+LOAD c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0\libgcc.a
+LOAD c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a
+END GROUP
+LOAD c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+LOAD c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+                0x00000400                __Stack_Size = 0x400
+                0x00000400                PROVIDE (_Stack_Size, __Stack_Size)
+                0x2000fc00                __Stack_Init = (_estack - __Stack_Size)
+                0x2000fc00                PROVIDE (_Stack_Init, __Stack_Init)
+                0x00000100                _Minimum_Stack_Size = 0x100
+                0x00000000                PROVIDE (Undefined_Handler, 0x0)
+                0x00000000                PROVIDE (SWI_Handler, 0x0)
+                0x00000000                PROVIDE (IRQ_Handler, 0x0)
+                0x00000000                PROVIDE (Prefetch_Handler, 0x0)
+                0x00000000                PROVIDE (Abort_Handler, 0x0)
+                0x00000000                PROVIDE (FIQ_Handler, 0x0)
+                0x00000000                PROVIDE (NMIException, 0x0)
+                0x00000000                PROVIDE (HardFaultException, 0x0)
+                0x00000000                PROVIDE (MemManageException, 0x0)
+                0x00000000                PROVIDE (BusFaultException, 0x0)
+                0x00000000                PROVIDE (UsageFaultException, 0x0)
+                0x00000000                PROVIDE (SVCHandler, 0x0)
+                0x00000000                PROVIDE (DebugMonitor, 0x0)
+                0x00000000                PROVIDE (PendSVC, 0x0)
+                0x00000000                PROVIDE (SysTickHandler, 0x0)
+                0x00000000                PROVIDE (WWDG_IRQHandler, 0x0)
+                0x00000000                PROVIDE (PVD_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TAMPER_IRQHandler, 0x0)
+                0x00000000                PROVIDE (RTC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (FLASH_IRQHandler, 0x0)
+                0x00000000                PROVIDE (RCC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI0_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI4_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel4_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel5_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel6_IRQHandler, 0x0)
+                0x00000000                PROVIDE (DMAChannel7_IRQHandler, 0x0)
+                0x00000000                PROVIDE (ADC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USB_HP_CAN_TX_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USB_LP_CAN_RX0_IRQHandler, 0x0)
+                0x00000000                PROVIDE (CAN_RX1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (CAN_SCE_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI9_5_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_BRK_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_UP_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_TRG_COM_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM1_CC_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (TIM4_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C1_EV_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C1_ER_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C2_EV_IRQHandler, 0x0)
+                0x00000000                PROVIDE (I2C2_ER_IRQHandler, 0x0)
+                0x00000000                PROVIDE (SPI1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (SPI2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USART1_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USART2_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USART3_IRQHandler, 0x0)
+                0x00000000                PROVIDE (EXTI15_10_IRQHandler, 0x0)
+                0x00000000                PROVIDE (RTCAlarm_IRQHandler, 0x0)
+                0x00000000                PROVIDE (USBWakeUp_IRQHandler, 0x0)
+                0x42000000                PERIPH_BB_BASE = 0x42000000
+                0x22000000                SRAM_BB_BASE = 0x22000000
+                0x20000000                SRAM_BASE = 0x20000000
+                0x40000000                PERIPH_BASE = 0x40000000
+                0x40022000                PROVIDE (FLASH_BASE, 0x40022000)
+                0x1ffff800                PROVIDE (OB_BASE, 0x1ffff800)
+                0x40000000                APB1PERIPH_BASE = PERIPH_BASE
+                0x40010000                APB2PERIPH_BASE = (PERIPH_BASE + 0x10000)
+                0x40020000                AHBPERIPH_BASE = (PERIPH_BASE + 0x20000)
+                0x40000000                PROVIDE (TIM2, (APB1PERIPH_BASE + 0x0))
+                0x40000400                PROVIDE (TIM3, (APB1PERIPH_BASE + 0x400))
+                0x40000800                PROVIDE (TIM4, (APB1PERIPH_BASE + 0x800))
+                0x40002800                PROVIDE (RTC, (APB1PERIPH_BASE + 0x2800))
+                0x40002c00                PROVIDE (WWDG, (APB1PERIPH_BASE + 0x2c00))
+                0x40003000                PROVIDE (IWDG, (APB1PERIPH_BASE + 0x3000))
+                0x40003800                PROVIDE (SPI2, (APB1PERIPH_BASE + 0x3800))
+                0x40004400                PROVIDE (USART2, (APB1PERIPH_BASE + 0x4400))
+                0x40004800                PROVIDE (USART3, (APB1PERIPH_BASE + 0x4800))
+                0x40005400                PROVIDE (I2C1, (APB1PERIPH_BASE + 0x5400))
+                0x40005800                PROVIDE (I2C2, (APB1PERIPH_BASE + 0x5800))
+                0x40006400                PROVIDE (CAN, (APB1PERIPH_BASE + 0x6400))
+                0x40006c00                PROVIDE (BKP, (APB1PERIPH_BASE + 0x6c00))
+                0x40007000                PROVIDE (PWR, (APB1PERIPH_BASE + 0x7000))
+                0x40010000                PROVIDE (AFIO, (APB2PERIPH_BASE + 0x0))
+                0x40010400                PROVIDE (EXTI, (APB2PERIPH_BASE + 0x400))
+                0x40010800                PROVIDE (GPIOA, (APB2PERIPH_BASE + 0x800))
+                0x40010c00                PROVIDE (GPIOB, (APB2PERIPH_BASE + 0xc00))
+                0x40011000                PROVIDE (GPIOC, (APB2PERIPH_BASE + 0x1000))
+                0x40011400                PROVIDE (GPIOD, (APB2PERIPH_BASE + 0x1400))
+                0x40011800                PROVIDE (GPIOE, (APB2PERIPH_BASE + 0x1800))
+                0x40012400                PROVIDE (ADC1, (APB2PERIPH_BASE + 0x2400))
+                0x40012800                PROVIDE (ADC2, (APB2PERIPH_BASE + 0x2800))
+                0x40012c00                PROVIDE (TIM1, (APB2PERIPH_BASE + 0x2c00))
+                0x40013000                PROVIDE (SPI1, (APB2PERIPH_BASE + 0x3000))
+                0x40013800                PROVIDE (USART1, (APB2PERIPH_BASE + 0x3800))
+                0x40020000                PROVIDE (DMA, (AHBPERIPH_BASE + 0x0))
+                0x40020008                PROVIDE (DMA_Channel1, (AHBPERIPH_BASE + 0x8))
+                0x4002001c                PROVIDE (DMA_Channel2, (AHBPERIPH_BASE + 0x1c))
+                0x40020030                PROVIDE (DMA_Channel3, (AHBPERIPH_BASE + 0x30))
+                0x40020044                PROVIDE (DMA_Channel4, (AHBPERIPH_BASE + 0x44))
+                0x40020058                PROVIDE (DMA_Channel5, (AHBPERIPH_BASE + 0x58))
+                0x4002006c                PROVIDE (DMA_Channel6, (AHBPERIPH_BASE + 0x6c))
+                0x40020080                PROVIDE (DMA_Channel7, (AHBPERIPH_BASE + 0x80))
+                0x40021000                PROVIDE (RCC, (AHBPERIPH_BASE + 0x1000))
+                0xe000e000                SCS_BASE = 0xe000e000
+                0xe000e010                PROVIDE (SysTick, (SCS_BASE + 0x10))
+                0xe000e100                PROVIDE (NVIC, (SCS_BASE + 0x100))
+                0xe000ed00                PROVIDE (SCB, (SCS_BASE + 0xd00))
+                0x20010000                _estack = 0x20010000
+
+.isr_vector     0x08003000      0x134
+                0x08003000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08003000      0x134 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+                0x08003000                g_pfnVectors
+                0x08003134                . = ALIGN (0x4)
+
+.flashtext      0x08003134        0x0
+                0x08003134                . = ALIGN (0x4)
+ *(.flashtext)
+                0x08003134                . = ALIGN (0x4)
+
+.text           0x08003134     0x5a54
+                0x08003134                . = ALIGN (0x4)
+ *(.text)
+ .text          0x08003134     0x3218 APP/src/main.o
+                0x0800320c                RxD0Interrupt
+                0x080031b4                CheckTimeOut
+                0x080033f8                USART_Configuration
+                0x080035e8                Posicao
+                0x08003348                TxDByte16
+                0x08003164                RxDByte_DXL
+                0x08003370                TxDWord16
+                0x080031c8                mDelay
+                0x08003244                TimerInterrupt_1ms
+                0x080033a0                TxDByte_DXL
+                0x080031a8                StartDiscount
+                0x08003328                TxDByte_PC
+                0x08003510                NVIC_Configuration
+                0x08003770                main
+                0x08003194                __ISR_DELAY
+                0x08003384                TxDString
+                0x08003564                RCC_Configuration
+                0x08003298                Timer_Configuration
+                0x080033e4                DisableUSART1
+                0x080031f4                SysTick_Configuration
+                0x08003488                GPIO_Configuration
+                0x08003134                ClearBuffer256
+                0x08003478                USART1_Configuration
+                0x0800314c                CheckNewArrive
+ .text          0x0800634c      0x12c APP/src/stm32f10x_it.o
+                0x0800638c                EXTI2_IRQHandler
+                0x08006354                MemManageException
+                0x08006418                TIM8_TRG_COM_IRQHandler
+                0x0800641c                TIM8_CC_IRQHandler
+                0x08006358                BusFaultException
+                0x080063d8                TIM1_CC_IRQHandler
+                0x0800643c                TIM6_IRQHandler
+                0x08006370                PVD_IRQHandler
+                0x08006428                SDIO_IRQHandler
+                0x08006390                EXTI3_IRQHandler
+                0x08006360                DebugMonitor
+                0x08006364                SVCHandler
+                0x08006350                HardFaultException
+                0x080063b8                USB_HP_CAN_TX_IRQHandler
+                0x08006384                EXTI0_IRQHandler
+                0x080063ec                I2C2_EV_IRQHandler
+                0x080063b4                ADC1_2_IRQHandler
+                0x080063f4                SPI1_IRQHandler
+                0x080063c4                CAN_SCE_IRQHandler
+                0x08006374                TAMPER_IRQHandler
+                0x08006414                TIM8_UP_IRQHandler
+                0x08006448                DMA2_Channel2_IRQHandler
+                0x080063a4                DMA1_Channel4_IRQHandler
+                0x0800634c                NMIException
+                0x08006400                USART3_IRQHandler
+                0x08006378                RTC_IRQHandler
+                0x0800646c                SysTickHandler
+                0x080063b0                DMA1_Channel7_IRQHandler
+                0x08006368                PendSVC
+                0x08006438                UART5_IRQHandler
+                0x08006420                ADC3_IRQHandler
+                0x080063e0                TIM4_IRQHandler
+                0x080063c0                CAN_RX1_IRQHandler
+                0x08006444                DMA2_Channel1_IRQHandler
+                0x080063e4                I2C1_EV_IRQHandler
+                0x080063ac                DMA1_Channel6_IRQHandler
+                0x08006434                UART4_IRQHandler
+                0x080063dc                TIM3_IRQHandler
+                0x08006380                RCC_IRQHandler
+                0x080063d4                TIM1_TRG_COM_IRQHandler
+                0x08006398                DMA1_Channel1_IRQHandler
+                0x08006404                EXTI15_10_IRQHandler
+                0x08006440                TIM7_IRQHandler
+                0x0800642c                TIM5_IRQHandler
+                0x080063c8                EXTI9_5_IRQHandler
+                0x080063f8                SPI2_IRQHandler
+                0x080063bc                USB_LP_CAN_RX0_IRQHandler
+                0x080063a8                DMA1_Channel5_IRQHandler
+                0x08006394                EXTI4_IRQHandler
+                0x080063a0                DMA1_Channel3_IRQHandler
+                0x08006424                FSMC_IRQHandler
+                0x080063d0                TIM1_UP_IRQHandler
+                0x0800636c                WWDG_IRQHandler
+                0x08006460                TIM2_IRQHandler
+                0x080063cc                TIM1_BRK_IRQHandler
+                0x08006388                EXTI1_IRQHandler
+                0x08006408                RTCAlarm_IRQHandler
+                0x08006450                DMA2_Channel4_5_IRQHandler
+                0x080063fc                USART2_IRQHandler
+                0x080063f0                I2C2_ER_IRQHandler
+                0x0800639c                DMA1_Channel2_IRQHandler
+                0x08006410                TIM8_BRK_IRQHandler
+                0x0800635c                UsageFaultException
+                0x0800637c                FLASH_IRQHandler
+                0x08006454                USART1_IRQHandler
+                0x08006430                SPI3_IRQHandler
+                0x080063e8                I2C1_ER_IRQHandler
+                0x0800640c                USBWakeUp_IRQHandler
+                0x0800644c                DMA2_Channel3_IRQHandler
+ .text          0x08006478       0x8c APP/src/dxl_hal.o
+                0x080064e8                dxl_hal_close
+                0x08006498                dxl_hal_rx
+                0x080064c0                dxl_hal_tx
+                0x080064dc                dxl_hal_clear
+                0x080064f4                dxl_hal_open
+                0x08006484                dxl_hal_set_timeout
+                0x08006478                dxl_hal_timeout
+ .text          0x08006504      0x40c APP/src/dynamixel.o
+                0x080068a8                dxl_ping
+                0x08006540                dxl_get_rxpacket_error
+                0x08006840                dxl_write_byte
+                0x08006580                dxl_rx_packet
+                0x08006534                dxl_set_txpacket_length
+                0x08006504                dxl_get_result
+                0x08006870                dxl_read_byte
+                0x080066e8                dxl_tx_packet
+                0x080068d0                dxl_terminate
+                0x0800651c                dxl_set_txpacket_instruction
+                0x08006554                dxl_get_rxpacket_length
+                0x080067cc                dxl_write_word
+                0x08006578                dxl_get_highbyte
+                0x080068dc                dxl_initialize
+                0x0800656c                dxl_makeword
+                0x08006574                dxl_get_lowbyte
+                0x08006560                dxl_get_rxpacket_parameter
+                0x08006510                dxl_set_txpacket_id
+                0x08006804                dxl_read_word
+                0x080067ac                dxl_txrx_packet
+                0x08006528                dxl_set_txpacket_parameter
+ .text          0x08006910      0x528 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+                0x08006958                FLASH_Unlock
+                0x0800698c                FLASH_GetWriteProtectionOptionByte
+                0x08006b1c                FLASH_ReadOutProtection
+                0x08006cf4                FLASH_ProgramWord
+                0x08006cbc                FLASH_ProgramHalfWord
+                0x08006df0                FLASH_ErasePage
+                0x08006928                FLASH_HalfCycleAccessCmd
+                0x080069d4                FLASH_GetFlagStatus
+                0x080069a8                FLASH_GetPrefetchBufferStatus
+                0x08006db4                FLASH_EraseAllPages
+                0x08006980                FLASH_GetUserOptionByte
+                0x08006ac0                FLASH_UserOptionByteConfig
+                0x080069b8                FLASH_ITConfig
+                0x08006970                FLASH_Lock
+                0x08006d3c                FLASH_EraseOptionBytes
+                0x08006940                FLASH_PrefetchBufferCmd
+                0x08006a00                FLASH_GetStatus
+                0x080069f4                FLASH_ClearFlag
+                0x08006a2c                FLASH_WaitForLastOperation
+                0x08006c78                FLASH_ProgramOptionByteData
+                0x08006910                FLASH_SetLatency
+                0x08006998                FLASH_GetReadOutProtectionStatus
+                0x08006bb8                FLASH_EnableWriteProtection
+ .text          0x08006e38      0x288 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+                0x08006f40                GPIO_EventOutputConfig
+                0x08006f04                GPIO_ReadOutputDataBit
+                0x08006f60                GPIO_EventOutputCmd
+                0x08006f6c                GPIO_PinRemapConfig
+                0x08006e38                GPIO_Init
+                0x08007000                GPIO_AFIODeInit
+                0x08006f2c                GPIO_Write
+                0x08006f10                GPIO_ReadOutputData
+                0x08006efc                GPIO_ReadInputData
+                0x08006f18                GPIO_SetBits
+                0x08006f20                GPIO_WriteBit
+                0x08006f1c                GPIO_ResetBits
+                0x08006fcc                GPIO_EXTILineConfig
+                0x08007018                GPIO_DeInit
+                0x08006ee0                GPIO_StructInit
+                0x08006f30                GPIO_PinLockConfig
+                0x08006ef0                GPIO_ReadInputDataBit
+ .text          0x080070c0      0x384 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+                0x08007420                NVIC_SETFAULTMASK
+                0x080073f8                NVIC_GetBASEPRI
+                0x08007138                NVIC_Init
+                0x08007260                NVIC_SetVectorTable
+                0x080071fc                NVIC_SetIRQChannelPendingBit
+                0x08007438                NVIC_SETPRIMASK
+                0x08007350                NVIC_SetSystemHandlerPendingBit
+                0x08007208                NVIC_ClearIRQChannelPendingBit
+                0x080071c0                NVIC_GetCurrentPendingIRQChannel
+                0x080073e4                NVIC_GetFaultAddress
+                0x08007274                NVIC_GenerateSystemReset
+                0x08007230                NVIC_GetIRQChannelActiveBitStatus
+                0x080070f4                NVIC_SCBDeInit
+                0x080072b0                NVIC_SystemHandlerConfig
+                0x08007220                NVIC_GetCurrentActiveHandler
+                0x08007414                NVIC_RESETFAULTMASK
+                0x08007380                NVIC_GetSystemHandlerActiveBitStatus
+                0x0800742c                NVIC_RESETPRIMASK
+                0x08007368                NVIC_ClearSystemHandlerPendingBit
+                0x08007294                NVIC_SystemLPConfig
+                0x080072d8                NVIC_SystemHandlerPriorityConfig
+                0x080071d8                NVIC_GetIRQChannelPendingBitStatus
+                0x08007284                NVIC_GenerateCoreReset
+                0x08007254                NVIC_GetCPUID
+                0x08007404                NVIC_BASEPRICONFIG
+                0x08007124                NVIC_PriorityGroupConfig
+                0x080071b4                NVIC_StructInit
+                0x08007330                NVIC_GetSystemHandlerPendingBitStatus
+                0x080070c0                NVIC_DeInit
+                0x080073a0                NVIC_GetFaultHandlerSources
+ .text          0x08007444       0xe0 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+                0x080074a0                PWR_EnterSTANDBYMode
+                0x08007470                PWR_WakeUpPinCmd
+                0x08007444                PWR_BackupAccessCmd
+                0x080074d4                PWR_EnterSTOPMode
+                0x0800750c                PWR_DeInit
+                0x0800747c                PWR_GetFlagStatus
+                0x0800745c                PWR_PVDLevelConfig
+                0x08007490                PWR_ClearFlag
+                0x08007450                PWR_PVDCmd
+ .text          0x08007524      0x3a4 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                0x080075dc                RCC_HSICmd
+                0x080075fc                RCC_PLLCmd
+                0x080078bc                RCC_ClearITPendingBit
+                0x08007848                RCC_MCOConfig
+                0x08007668                RCC_ITConfig
+                0x08007608                RCC_SYSCLKConfig
+                0x08007598                RCC_WaitForHSEStartUp
+                0x08007830                RCC_BackupResetCmd
+                0x0800783c                RCC_ClockSecuritySystemCmd
+                0x08007898                RCC_ClearFlag
+                0x08007564                RCC_HSEConfig
+                0x080077c0                RCC_APB2PeriphClockCmd
+                0x080075e8                RCC_PLLConfig
+                0x08007690                RCC_ADCCLKConfig
+                0x080076a4                RCC_LSEConfig
+                0x080076e0                RCC_RTCCLKCmd
+                0x080077dc                RCC_APB1PeriphClockCmd
+                0x080078a8                RCC_GetITStatus
+                0x080077a4                RCC_AHBPeriphClockCmd
+                0x08007854                RCC_GetFlagStatus
+                0x0800761c                RCC_GetSYSCLKSource
+                0x080076ec                RCC_GetClocksFreq
+                0x080076d0                RCC_RTCCLKConfig
+                0x080075c8                RCC_AdjustHSICalibrationValue
+                0x08007640                RCC_PCLK1Config
+                0x08007684                RCC_USBCLKConfig
+                0x08007654                RCC_PCLK2Config
+                0x08007524                RCC_DeInit
+                0x08007814                RCC_APB1PeriphResetCmd
+                0x080076c4                RCC_LSICmd
+                0x080077f8                RCC_APB2PeriphResetCmd
+                0x0800762c                RCC_HCLKConfig
+ .text          0x080078c8       0xa4 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+                0x080078f0                SysTick_CounterCmd
+                0x08007944                SysTick_GetFlagStatus
+                0x080078c8                SysTick_CLKSourceConfig
+                0x08007938                SysTick_GetCounter
+                0x0800791c                SysTick_ITConfig
+                0x080078e4                SysTick_SetReload
+ .text          0x0800796c      0xd88 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                0x08007f5c                TIM_TimeBaseStructInit
+                0x080081d0                TIM_ForcedOC2Config
+                0x08008534                TIM_SetCompare2
+                0x08008224                TIM_SelectCOM
+                0x080083cc                TIM_CCxCmd
+                0x08008590                TIM_SetIC4Prescaler
+                0x0800825c                TIM_CCPreloadControl
+                0x08008278                TIM_OC1PreloadConfig
+                0x08008114                TIM_ETRClockMode2Config
+                0x08008358                TIM_OC1NPolarityConfig
+                0x080081c0                TIM_ForcedOC1Config
+                0x08008014                TIM_DMACmd
+                0x080080ec                TIM_ETRClockMode1Config
+                0x08008578                TIM_SetIC3Prescaler
+                0x08008328                TIM_ClearOC3Ref
+                0x08007fd4                TIM_CtrlPWMOutputs
+                0x08007fb8                TIM_Cmd
+                0x080082ac                TIM_OC4PreloadConfig
+                0x080085f8                TIM_ClearFlag
+                0x0800861c                TIM_ClearITPendingBit
+                0x080085dc                TIM_GetCounter
+                0x080085cc                TIM_GetCapture3
+                0x080085bc                TIM_GetCapture1
+                0x08007b28                TIM_OC3Init
+                0x08008628                TIM_DeInit
+                0x080085ec                TIM_GetFlagStatus
+                0x080082e4                TIM_OC3FastConfig
+                0x08008240                TIM_SelectCCDMA
+                0x080085ac                TIM_SetClockDivision
+                0x080079c0                TIM_OC1Init
+                0x0800829c                TIM_OC3PreloadConfig
+                0x0800852c                TIM_SetAutoreload
+                0x08008208                TIM_ARRPreloadConfig
+                0x08008604                TIM_GetITStatus
+                0x0800840c                TIM_SelectOCxM
+                0x080082c0                TIM_OC1FastConfig
+                0x08008288                TIM_OC2PreloadConfig
+                0x08008168                TIM_SelectInputTrigger
+                0x08007ff0                TIM_ITConfig
+                0x08007a70                TIM_OC2Init
+                0x08008150                TIM_PrescalerConfig
+                0x080083b8                TIM_OC4PolarityConfig
+                0x080084e0                TIM_SelectOutputTrigger
+                0x08008538                TIM_SetCompare3
+                0x08007bdc                TIM_OC4Init
+                0x080084ac                TIM_SelectHallSensor
+                0x08008544                TIM_SetIC1Prescaler
+                0x080081f4                TIM_ForcedOC4Config
+                0x0800803c                TIM_ITRxExternalClockConfig
+                0x08008390                TIM_OC3PolarityConfig
+                0x0800802c                TIM_InternalClockConfig
+                0x08008348                TIM_OC1PolarityConfig
+                0x080082d0                TIM_OC2FastConfig
+                0x08008528                TIM_SetCounter
+                0x0800853c                TIM_SetCompare4
+                0x080085c4                TIM_GetCapture2
+                0x080085e4                TIM_GetPrescaler
+                0x08008318                TIM_ClearOC2Ref
+                0x08007c70                TIM_ICInit
+                0x08007f8c                TIM_ICStructInit
+                0x08007ddc                TIM_PWMIConfig
+                0x0800837c                TIM_OC2NPolarityConfig
+                0x08008308                TIM_ClearOC1Ref
+                0x08008490                TIM_UpdateRequestConfig
+                0x080081e4                TIM_ForcedOC3Config
+                0x08008058                TIM_TIxExternalClockConfig
+                0x08007fa4                TIM_BDTRStructInit
+                0x08007f74                TIM_OCStructInit
+                0x080083a4                TIM_OC3NPolarityConfig
+                0x080083ec                TIM_CCxNCmd
+                0x08008510                TIM_SelectMasterSlaveMode
+                0x080085d4                TIM_GetCapture4
+                0x0800796c                TIM_TimeBaseInit
+                0x0800800c                TIM_DMAConfig
+                0x08008008                TIM_GenerateEvent
+                0x08007f38                TIM_BDTRConfig
+                0x0800855c                TIM_SetIC2Prescaler
+                0x08008138                TIM_ETRConfig
+                0x080084f8                TIM_SelectSlaveMode
+                0x08008338                TIM_ClearOC4Ref
+                0x080084c8                TIM_SelectOnePulseMode
+                0x08008178                TIM_EncoderInterfaceConfig
+                0x08008530                TIM_SetCompare1
+                0x08008368                TIM_OC2PolarityConfig
+                0x08008474                TIM_UpdateDisableConfig
+                0x080082f4                TIM_OC4FastConfig
+                0x08008158                TIM_CounterModeConfig
+ .text          0x080086f4      0x3bc stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                0x0800885c                USART_SetGuardTime
+                0x08008884                USART_SmartCardCmd
+                0x0800890c                USART_GetFlagStatus
+                0x080087c0                USART_SetAddress
+                0x08008870                USART_SetPrescaler
+                0x08008848                USART_ReceiveData
+                0x0800874c                USART_Cmd
+                0x080088f0                USART_IrDACmd
+                0x08008970                USART_ClearITPendingBit
+                0x08008924                USART_GetITStatus
+                0x0800880c                USART_LINBreakDetectLengthConfig
+                0x08008980                USART_Init
+                0x080088bc                USART_HalfDuplexCmd
+                0x08008768                USART_ITConfig
+                0x080088d8                USART_IrDAConfig
+                0x08008a1c                USART_DeInit
+                0x08008714                USART_ClockInit
+                0x08008850                USART_SendBreak
+                0x08008918                USART_ClearFlag
+                0x080087d8                USART_WakeUpConfig
+                0x08008840                USART_SendData
+                0x080087f0                USART_ReceiverWakeUpCmd
+                0x080086f4                USART_StructInit
+                0x080088a0                USART_SmartCardNACKCmd
+                0x08008824                USART_LINCmd
+                0x0800873c                USART_ClockStructInit
+                0x080087a8                USART_DMACmd
+ .text          0x08008ab0       0x6e stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+                0x08008ad2                __MRS_CONTROL
+                0x08008b10                __GetBASEPRI
+                0x08008ae8                __MSR_PSP
+                0x08008afe                __RESETPRIMASK
+                0x08008b02                __SETFAULTMASK
+                0x08008ab8                __SEV
+                0x08008ab4                __WFE
+                0x08008b06                __RESETFAULTMASK
+                0x08008aee                __MRS_MSP
+                0x08008af4                __MSR_MSP
+                0x08008ae2                __MRS_PSP
+                0x08008b16                __REV_HalfWord
+                0x08008ab0                __WFI
+                0x08008ad8                __MSR_CONTROL
+                0x08008b0a                __BASEPRICONFIG
+                0x08008afa                __SETPRIMASK
+                0x08008b1a                __REV_Word
+                0x08008ace                __SVC
+                0x08008abc                __ISB
+                0x08008ac2                __DSB
+                0x08008ac8                __DMB
+ *fill*         0x08008b1e        0x2 00
+ .text          0x08008b20       0x54 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+                0x08008b20                Reset_Handler
+ *(.text.*)
+ *(.rodata)
+ .rodata        0x08008b74       0x14 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ *(.rodata*)
+ *(.glue_7)
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .glue_7        0x08008b88        0x0 APP/src/main.o
+ .glue_7        0x08008b88        0x0 APP/src/stm32f10x_it.o
+ .glue_7        0x08008b88        0x0 APP/src/dxl_hal.o
+ .glue_7        0x08008b88        0x0 APP/src/dynamixel.o
+ .glue_7        0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .glue_7        0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .glue_7        0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .glue_7        0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .glue_7        0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .glue_7        0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .glue_7        0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .glue_7        0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .glue_7        0x08008b88        0x0 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .glue_7        0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+ .glue_7        0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+ *(.glue_7t)
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .glue_7t       0x08008b88        0x0 APP/src/main.o
+ .glue_7t       0x08008b88        0x0 APP/src/stm32f10x_it.o
+ .glue_7t       0x08008b88        0x0 APP/src/dxl_hal.o
+ .glue_7t       0x08008b88        0x0 APP/src/dynamixel.o
+ .glue_7t       0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .glue_7t       0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .glue_7t       0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .glue_7t       0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .glue_7t       0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .glue_7t       0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .glue_7t       0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .glue_7t       0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .glue_7t       0x08008b88        0x0 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .glue_7t       0x08008b88        0x0 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+ .glue_7t       0x08008b88        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+                0x08008b88                . = ALIGN (0x4)
+                0x08008b88                _etext = .
+                0x08008b88                _sidata = _etext
+
+.vfp11_veneer   0x20000000        0x0
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .vfp11_veneer  0x20000000        0x0 APP/src/main.o
+ .vfp11_veneer  0x20000000        0x0 APP/src/stm32f10x_it.o
+ .vfp11_veneer  0x20000000        0x0 APP/src/dxl_hal.o
+ .vfp11_veneer  0x20000000        0x0 APP/src/dynamixel.o
+ .vfp11_veneer  0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .vfp11_veneer  0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .vfp11_veneer  0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .vfp11_veneer  0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .vfp11_veneer  0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .vfp11_veneer  0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .vfp11_veneer  0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .vfp11_veneer  0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .vfp11_veneer  0x20000000        0x0 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .vfp11_veneer  0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+ .vfp11_veneer  0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+
+.v4_bx          0x20000000        0x0
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .v4_bx         0x20000000        0x0 APP/src/main.o
+ .v4_bx         0x20000000        0x0 APP/src/stm32f10x_it.o
+ .v4_bx         0x20000000        0x0 APP/src/dxl_hal.o
+ .v4_bx         0x20000000        0x0 APP/src/dynamixel.o
+ .v4_bx         0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .v4_bx         0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .v4_bx         0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .v4_bx         0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .v4_bx         0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .v4_bx         0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .v4_bx         0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .v4_bx         0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .v4_bx         0x20000000        0x0 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .v4_bx         0x20000000        0x0 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+ .v4_bx         0x20000000        0x0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+
+.data           0x20000000       0x6c load address 0x08008b88
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata = .
+ *(.data)
+ .data          0x20000000       0x68 APP/src/main.o
+                0x20000061                id14
+                0x20000020                GoalPos6
+                0x2000003c                GoalPos13
+                0x20000024                GoalPos7
+                0x20000018                GoalPos4
+                0x20000063                id16
+                0x20000048                GoalPos16
+                0x20000004                Baudrate_PC
+                0x2000002c                GoalPos9
+                0x20000058                id5
+                0x20000008                CCR1_Val
+                0x2000005c                id9
+                0x2000005f                id12
+                0x2000005b                id8
+                0x2000001c                GoalPos5
+                0x20000010                GoalPos2
+                0x20000065                id18
+                0x20000050                GoalPos18
+                0x20000060                id13
+                0x20000044                GoalPos15
+                0x20000034                GoalPos11
+                0x20000014                GoalPos3
+                0x20000057                id4
+                0x20000062                id15
+                0x20000040                GoalPos14
+                0x2000004c                GoalPos17
+                0x2000005d                id10
+                0x20000056                id3
+                0x2000000c                GoalPos1
+                0x2000005e                id11
+                0x20000055                id2
+                0x20000059                id6
+                0x20000064                id17
+                0x20000054                id1
+                0x20000028                GoalPos8
+                0x20000038                GoalPos12
+                0x2000005a                id7
+                0x20000030                GoalPos10
+                0x20000000                Baudrate_DXL
+ .data          0x20000068        0x4 APP/src/dynamixel.o
+                0x20000068                gbCommStatus
+ *(.data.*)
+                0x2000006c                . = ALIGN (0x4)
+                0x2000006c                _edata = .
+
+.bss            0x2000006c      0x204 load address 0x08008bf4
+                0x2000006c                . = ALIGN (0x4)
+                0x2000006c                _sbss = .
+ *(.bss)
+ .bss           0x2000006c      0x118 APP/src/main.o
+                0x20000170                gbRxBufferWritePointer
+                0x2000017c                Position
+                0x2000017e                wPresentPos
+                0x20000174                gwTimingDelay
+                0x20000180                Voltage
+                0x20000171                gbRxBufferReadPointer
+                0x20000070                gbpRxInterruptBuffer
+                0x20000178                gw1msCounter
+                0x20000182                CommStatus
+                0x20000181                bMoving
+                0x2000006c                capture
+ .bss           0x20000184       0xec APP/src/dynamixel.o
+                0x20000184                gbInstructionPacket
+                0x2000026a                gbRxPacketLength
+                0x2000026b                gbRxGetLength
+                0x2000026c                giBusUsing
+                0x20000224                gbStatusPacket
+ *(COMMON)
+                0x20000270                . = ALIGN (0x4)
+                0x20000270                _ebss = .
+                0x20000270                PROVIDE (end, _ebss)
+                0x20000270                PROVIDE (_end, _ebss)
+
+._usrstack      0x20000270      0x100 load address 0x08008df8
+                0x20000270                . = ALIGN (0x4)
+                0x20000270                _susrstack = .
+                0x20000370                . = (. + _Minimum_Stack_Size)
+ *fill*         0x20000270      0x100 00
+                0x20000370                . = ALIGN (0x4)
+                0x20000370                _eusrstack = .
+
+.b1text
+ *(.b1text)
+ *(.b1rodata)
+ *(.b1rodata*)
+
+.eb0text
+ *(.eb0text)
+ *(.eb0rodata)
+ *(.eb0rodata*)
+
+.eb1text
+ *(.eb1text)
+ *(.eb1rodata)
+ *(.eb1rodata*)
+
+.eb2text
+ *(.eb2text)
+ *(.eb2rodata)
+ *(.eb2rodata*)
+
+.eb3text
+ *(.eb3text)
+ *(.eb3rodata)
+ *(.eb3rodata*)
+                0x20000370                __exidx_start = .
+                0x20000370                __exidx_end = .
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000      0x2c0
+ *(.comment)
+ .comment       0x00000000       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .comment       0x00000020       0x20 APP/src/main.o
+ .comment       0x00000040       0x20 APP/src/stm32f10x_it.o
+ .comment       0x00000060       0x20 APP/src/dxl_hal.o
+ .comment       0x00000080       0x20 APP/src/dynamixel.o
+ .comment       0x000000a0       0x20 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .comment       0x000000c0       0x20 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .comment       0x000000e0       0x20 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .comment       0x00000100       0x20 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .comment       0x00000120       0x20 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .comment       0x00000140       0x20 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .comment       0x00000160       0x20 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .comment       0x00000180       0x20 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .comment       0x000001a0       0x20 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .comment       0x000001c0       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .comment       0x000001e0       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .comment       0x00000200       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .comment       0x00000220       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .comment       0x00000240       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .comment       0x00000260       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .comment       0x00000280       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .comment       0x000002a0       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x2f0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .debug_aranges
+                0x00000028       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .debug_aranges
+                0x00000048       0x20 APP/src/main.o
+ .debug_aranges
+                0x00000068       0x20 APP/src/stm32f10x_it.o
+ .debug_aranges
+                0x00000088       0x20 APP/src/dxl_hal.o
+ .debug_aranges
+                0x000000a8       0x20 APP/src/dynamixel.o
+ .debug_aranges
+                0x000000c8       0x20 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_aranges
+                0x000000e8       0x20 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_aranges
+                0x00000108       0x20 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_aranges
+                0x00000128       0x20 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_aranges
+                0x00000148       0x20 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_aranges
+                0x00000168       0x20 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_aranges
+                0x00000188       0x20 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_aranges
+                0x000001a8       0x20 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_aranges
+                0x000001c8       0x20 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .debug_aranges
+                0x000001e8       0x20 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_aranges
+                0x00000208       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .debug_aranges
+                0x00000228       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .debug_aranges
+                0x00000248       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .debug_aranges
+                0x00000268       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .debug_aranges
+                0x00000288       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x000002a8       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x000002c8       0x28 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+
+.debug_pubnames
+                0x00000000     0x2437
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000      0x441 APP/src/main.o
+ .debug_pubnames
+                0x00000441      0x63c APP/src/stm32f10x_it.o
+ .debug_pubnames
+                0x00000a7d       0x91 APP/src/dxl_hal.o
+ .debug_pubnames
+                0x00000b0e      0x24f APP/src/dynamixel.o
+ .debug_pubnames
+                0x00000d5d      0x26e stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_pubnames
+                0x00000fcb      0x17b stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_pubnames
+                0x00001146      0x360 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_pubnames
+                0x000014a6       0xcb stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_pubnames
+                0x00001571      0x2c4 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_pubnames
+                0x00001835       0xa1 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_pubnames
+                0x000018d6      0x7b0 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_pubnames
+                0x00002086      0x25f stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_pubnames
+                0x000022e5       0x35 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_pubnames
+                0x0000231a       0x1d c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .debug_pubnames
+                0x00002337       0x1b c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .debug_pubnames
+                0x00002352       0x39 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .debug_pubnames
+                0x0000238b       0x3e c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .debug_pubnames
+                0x000023c9       0x1d c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .debug_pubnames
+                0x000023e6       0x2a c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .debug_pubnames
+                0x00002410       0x27 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+
+.debug_info     0x00000000     0x9441
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x4d c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .debug_info    0x0000004d       0x84 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .debug_info    0x000000d1      0xe22 APP/src/main.o
+ .debug_info    0x00000ef3      0x57d APP/src/stm32f10x_it.o
+ .debug_info    0x00001470      0x16c APP/src/dxl_hal.o
+ .debug_info    0x000015dc      0x58d APP/src/dynamixel.o
+ .debug_info    0x00001b69      0x73a stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_info    0x000022a3      0x648 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_info    0x000028eb      0x8e7 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_info    0x000031d2      0x247 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_info    0x00003419      0x8bd stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_info    0x00003cd6      0x1ef stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_info    0x00003ec5     0x2149 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_info    0x0000600e      0x950 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_info    0x0000695e       0xa7 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .debug_info    0x00006a05      0x106 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_info    0x00006b0b       0xc5 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .debug_info    0x00006bd0      0x93a c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .debug_info    0x0000750a      0x93a c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .debug_info    0x00007e44      0x146 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .debug_info    0x00007f8a      0x113 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .debug_info    0x0000809d      0x9a5 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .debug_info    0x00008a42      0x9b2 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x000093f4       0x4d c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+
+.debug_abbrev   0x00000000     0x1e97
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .debug_abbrev  0x00000012       0x14 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .debug_abbrev  0x00000026      0x20a APP/src/main.o
+ .debug_abbrev  0x00000230       0x68 APP/src/stm32f10x_it.o
+ .debug_abbrev  0x00000298       0xc4 APP/src/dxl_hal.o
+ .debug_abbrev  0x0000035c      0x22d APP/src/dynamixel.o
+ .debug_abbrev  0x00000589      0x21c stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_abbrev  0x000007a5      0x225 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_abbrev  0x000009ca      0x259 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_abbrev  0x00000c23      0x140 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_abbrev  0x00000d63      0x29b stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_abbrev  0x00000ffe      0x126 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_abbrev  0x00001124      0x27d stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_abbrev  0x000013a1      0x1e1 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_abbrev  0x00001582       0x14 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .debug_abbrev  0x00001596       0xb5 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_abbrev  0x0000164b       0x81 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .debug_abbrev  0x000016cc      0x177 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .debug_abbrev  0x00001843      0x160 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x000019a3       0xa4 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .debug_abbrev  0x00001a47       0xb2 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .debug_abbrev  0x00001af9      0x1bc c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x00001cb5      0x1d0 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x00001e85       0x12 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+
+.debug_line     0x00000000     0x1f7b
+ *(.debug_line)
+ .debug_line    0x00000000       0x49 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .debug_line    0x00000049       0x9a c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .debug_line    0x000000e3      0x3ba APP/src/main.o
+ .debug_line    0x0000049d      0x159 APP/src/stm32f10x_it.o
+ .debug_line    0x000005f6       0x71 APP/src/dxl_hal.o
+ .debug_line    0x00000667      0x146 APP/src/dynamixel.o
+ .debug_line    0x000007ad      0x223 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_line    0x000009d0      0x178 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_line    0x00000b48      0x1aa stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_line    0x00000cf2       0xd6 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_line    0x00000dc8      0x1b8 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_line    0x00000f80       0xbd stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_line    0x0000103d      0x5ef stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_line    0x0000162c      0x1fe stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_line    0x0000182a       0xa4 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .debug_line    0x000018ce       0x5e stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_line    0x0000192c       0x74 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .debug_line    0x000019a0       0xef c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .debug_line    0x00001a8f       0xdb c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .debug_line    0x00001b6a       0xa6 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .debug_line    0x00001c10       0xdc c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .debug_line    0x00001cec      0x127 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .debug_line    0x00001e13      0x11f c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x00001f32       0x49 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+
+.debug_frame    0x00000000     0x1b2c
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x258 APP/src/main.o
+ .debug_frame   0x00000258      0x478 APP/src/stm32f10x_it.o
+ .debug_frame   0x000006d0       0xc0 APP/src/dxl_hal.o
+ .debug_frame   0x00000790      0x1b8 APP/src/dynamixel.o
+ .debug_frame   0x00000948      0x1f0 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_frame   0x00000b38      0x154 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_frame   0x00000c8c      0x234 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_frame   0x00000ec0       0xb8 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_frame   0x00000f78      0x214 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_frame   0x0000118c       0x70 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_frame   0x000011fc      0x608 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_frame   0x00001804      0x1dc stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_frame   0x000019e0       0x2c stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_frame   0x00001a0c       0x28 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .debug_frame   0x00001a34       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .debug_frame   0x00001a54       0x48 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .debug_frame   0x00001a9c       0x28 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .debug_frame   0x00001ac4       0x30 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00001af4       0x38 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+
+.debug_str      0x00000000     0x34ef
+ *(.debug_str)
+ .debug_str     0x00000000      0x86f APP/src/main.o
+                                0x8a7 (size before relaxing)
+ .debug_str     0x0000086f      0x52d APP/src/stm32f10x_it.o
+                                0x594 (size before relaxing)
+ .debug_str     0x00000d9c       0x9b APP/src/dxl_hal.o
+                                0x119 (size before relaxing)
+ .debug_str     0x00000e37      0x21c APP/src/dynamixel.o
+                                0x2f7 (size before relaxing)
+ .debug_str     0x00001053      0x395 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+                                0x497 (size before relaxing)
+ .debug_str     0x000013e8      0x20b stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+                                0x406 (size before relaxing)
+ .debug_str     0x000015f3      0x459 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+                                0x60c (size before relaxing)
+ .debug_str     0x00001a4c       0xe9 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+                                0x1ec (size before relaxing)
+ .debug_str     0x00001b35      0x40d stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                0x54e (size before relaxing)
+ .debug_str     0x00001f42       0xdc stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+                                0x1e9 (size before relaxing)
+ .debug_str     0x0000201e      0x9c4 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                0xd18 (size before relaxing)
+ .debug_str     0x000029e2      0x36b stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                0x5a3 (size before relaxing)
+ .debug_str     0x00002d4d       0x79 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+                                0x132 (size before relaxing)
+ .debug_str     0x00002dc6       0xc1 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+                                0x138 (size before relaxing)
+ .debug_str     0x00002e87      0x3bd c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+                                0x4b1 (size before relaxing)
+ .debug_str     0x00003244       0x76 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+                                0x4bf (size before relaxing)
+ .debug_str     0x000032ba      0x103 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+                                0x19e (size before relaxing)
+ .debug_str     0x000033bd       0x87 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+                                0x123 (size before relaxing)
+ .debug_str     0x00003444       0x50 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+                                0x4f9 (size before relaxing)
+ .debug_str     0x00003494       0x5b c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+                                0x4d9 (size before relaxing)
+
+.debug_loc      0x00000000     0x2f0c
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x420 APP/src/main.o
+ .debug_loc     0x00000420       0x81 APP/src/stm32f10x_it.o
+ .debug_loc     0x000004a1      0x1d1 APP/src/dxl_hal.o
+ .debug_loc     0x00000672      0x47a APP/src/dynamixel.o
+ .debug_loc     0x00000aec      0x5ec stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_loc     0x000010d8      0x25c stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .debug_loc     0x00001334      0x3db stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .debug_loc     0x0000170f      0x113 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .debug_loc     0x00001822      0x24d stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_loc     0x00001a6f       0x3c stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .debug_loc     0x00001aab      0xe88 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_loc     0x00002933      0x27f stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .debug_loc     0x00002bb2       0x32 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .debug_loc     0x00002be4       0x49 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .debug_loc     0x00002c2d       0x1e c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .debug_loc     0x00002c4b       0x3e c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .debug_loc     0x00002c89      0x12b c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .debug_loc     0x00002db4       0x97 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .debug_loc     0x00002e4b       0xc1 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+OUTPUT(CM530teste2.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x14 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .ARM.attributes
+                0x00000014       0x2e c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+ .ARM.attributes
+                0x00000042       0x14 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+ .ARM.attributes
+                0x00000056       0x31 APP/src/main.o
+ .ARM.attributes
+                0x00000087       0x31 APP/src/stm32f10x_it.o
+ .ARM.attributes
+                0x000000b8       0x31 APP/src/dxl_hal.o
+ .ARM.attributes
+                0x000000e9       0x31 APP/src/dynamixel.o
+ .ARM.attributes
+                0x0000011a       0x31 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .ARM.attributes
+                0x0000014b       0x31 stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+ .ARM.attributes
+                0x0000017c       0x31 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+ .ARM.attributes
+                0x000001ad       0x31 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+ .ARM.attributes
+                0x000001de       0x31 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .ARM.attributes
+                0x0000020f       0x31 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+ .ARM.attributes
+                0x00000240       0x31 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .ARM.attributes
+                0x00000271       0x31 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+ .ARM.attributes
+                0x000002a2       0x21 stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+ .ARM.attributes
+                0x000002c3       0x31 stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ .ARM.attributes
+                0x000002f4       0x2e c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000322       0x2e c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000350       0x2c c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000037c       0x2e c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x000003aa       0x2e c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000003d8       0x2e c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x00000406       0x2e c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000434       0x2c c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtend.o
+ .ARM.attributes
+                0x00000460       0x14 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+
+.debug_ranges   0x00000000      0x248
+ .debug_ranges  0x00000000       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+ .debug_ranges  0x00000020       0xa8 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+ .debug_ranges  0x000000c8       0x30 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+ .debug_ranges  0x000000f8      0x110 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+ .debug_ranges  0x00000208       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+ .debug_ranges  0x00000228       0x20 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtn.o
+
+Cross Reference Table
+
+Symbol                                            File
+ADC1_2_IRQHandler                                 APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+ADC3_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+Baudrate_DXL                                      APP/src/main.o
+Baudrate_PC                                       APP/src/main.o
+BusFaultException                                 APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+CAN_RX1_IRQHandler                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+CAN_SCE_IRQHandler                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+CCR1_Val                                          APP/src/main.o
+CheckNewArrive                                    APP/src/main.o
+                                                  APP/src/dxl_hal.o
+CheckTimeOut                                      APP/src/main.o
+                                                  APP/src/dxl_hal.o
+ClearBuffer256                                    APP/src/main.o
+                                                  APP/src/dxl_hal.o
+CommStatus                                        APP/src/main.o
+DMA1_Channel1_IRQHandler                          APP/src/stm32f10x_it.o
+DMA1_Channel2_IRQHandler                          APP/src/stm32f10x_it.o
+DMA1_Channel3_IRQHandler                          APP/src/stm32f10x_it.o
+DMA1_Channel4_IRQHandler                          APP/src/stm32f10x_it.o
+DMA1_Channel5_IRQHandler                          APP/src/stm32f10x_it.o
+DMA1_Channel6_IRQHandler                          APP/src/stm32f10x_it.o
+DMA1_Channel7_IRQHandler                          APP/src/stm32f10x_it.o
+DMA2_Channel1_IRQHandler                          APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+DMA2_Channel2_IRQHandler                          APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+DMA2_Channel3_IRQHandler                          APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+DMA2_Channel4_5_IRQHandler                        APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+DebugMonitor                                      APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+DisableUSART1                                     APP/src/main.o
+                                                  APP/src/dxl_hal.o
+EXTI0_IRQHandler                                  APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+EXTI15_10_IRQHandler                              APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+EXTI1_IRQHandler                                  APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+EXTI2_IRQHandler                                  APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+EXTI3_IRQHandler                                  APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+EXTI4_IRQHandler                                  APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+EXTI9_5_IRQHandler                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+FLASH_ClearFlag                                   stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_EnableWriteProtection                       stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_EraseAllPages                               stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_EraseOptionBytes                            stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_ErasePage                                   stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_GetFlagStatus                               stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_GetPrefetchBufferStatus                     stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_GetReadOutProtectionStatus                  stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_GetStatus                                   stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_GetUserOptionByte                           stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_GetWriteProtectionOptionByte                stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_HalfCycleAccessCmd                          stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_IRQHandler                                  APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+FLASH_ITConfig                                    stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_Lock                                        stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_PrefetchBufferCmd                           stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+                                                  APP/src/main.o
+FLASH_ProgramHalfWord                             stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_ProgramOptionByteData                       stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_ProgramWord                                 stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_ReadOutProtection                           stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_SetLatency                                  stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+                                                  APP/src/main.o
+FLASH_Unlock                                      stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_UserOptionByteConfig                        stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FLASH_WaitForLastOperation                        stm32f10x_lib/libstm32.a(stm32f10x_flash.o)
+FSMC_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+GPIO_AFIODeInit                                   stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GPIO_Configuration                                APP/src/main.o
+GPIO_DeInit                                       stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GPIO_EXTILineConfig                               stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GPIO_EventOutputCmd                               stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GPIO_EventOutputConfig                            stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GPIO_Init                                         stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+                                                  APP/src/main.o
+GPIO_PinLockConfig                                stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GPIO_PinRemapConfig                               stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+                                                  APP/src/main.o
+GPIO_ReadInputData                                stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GPIO_ReadInputDataBit                             stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GPIO_ReadOutputData                               stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GPIO_ReadOutputDataBit                            stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GPIO_ResetBits                                    stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+                                                  APP/src/main.o
+GPIO_SetBits                                      stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+                                                  APP/src/main.o
+GPIO_StructInit                                   stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+                                                  APP/src/main.o
+GPIO_Write                                        stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GPIO_WriteBit                                     stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+GoalPos1                                          APP/src/main.o
+GoalPos10                                         APP/src/main.o
+GoalPos11                                         APP/src/main.o
+GoalPos12                                         APP/src/main.o
+GoalPos13                                         APP/src/main.o
+GoalPos14                                         APP/src/main.o
+GoalPos15                                         APP/src/main.o
+GoalPos16                                         APP/src/main.o
+GoalPos17                                         APP/src/main.o
+GoalPos18                                         APP/src/main.o
+GoalPos2                                          APP/src/main.o
+GoalPos3                                          APP/src/main.o
+GoalPos4                                          APP/src/main.o
+GoalPos5                                          APP/src/main.o
+GoalPos6                                          APP/src/main.o
+GoalPos7                                          APP/src/main.o
+GoalPos8                                          APP/src/main.o
+GoalPos9                                          APP/src/main.o
+HardFaultException                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+I2C1_ER_IRQHandler                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+I2C1_EV_IRQHandler                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+I2C2_ER_IRQHandler                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+I2C2_EV_IRQHandler                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+MemManageException                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+NMIException                                      APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+NVIC_BASEPRICONFIG                                stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_ClearIRQChannelPendingBit                    stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_ClearSystemHandlerPendingBit                 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_Configuration                                APP/src/main.o
+NVIC_DeInit                                       stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GenerateCoreReset                            stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GenerateSystemReset                          stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GetBASEPRI                                   stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GetCPUID                                     stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GetCurrentActiveHandler                      stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GetCurrentPendingIRQChannel                  stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GetFaultAddress                              stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GetFaultHandlerSources                       stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GetIRQChannelActiveBitStatus                 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GetIRQChannelPendingBitStatus                stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GetSystemHandlerActiveBitStatus              stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_GetSystemHandlerPendingBitStatus             stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_Init                                         stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+                                                  APP/src/main.o
+NVIC_PriorityGroupConfig                          stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+                                                  APP/src/main.o
+NVIC_RESETFAULTMASK                               stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_RESETPRIMASK                                 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_SCBDeInit                                    stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_SETFAULTMASK                                 stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_SETPRIMASK                                   stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_SetIRQChannelPendingBit                      stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_SetSystemHandlerPendingBit                   stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_SetVectorTable                               stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+                                                  APP/src/main.o
+NVIC_StructInit                                   stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_SystemHandlerConfig                          stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_SystemHandlerPriorityConfig                  stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+NVIC_SystemLPConfig                               stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+PVD_IRQHandler                                    APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+PWR_BackupAccessCmd                               stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+                                                  APP/src/main.o
+PWR_ClearFlag                                     stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+PWR_DeInit                                        stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+PWR_EnterSTANDBYMode                              stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+PWR_EnterSTOPMode                                 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+PWR_GetFlagStatus                                 stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+PWR_PVDCmd                                        stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+PWR_PVDLevelConfig                                stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+PWR_WakeUpPinCmd                                  stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+PendSVC                                           APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+Posicao                                           APP/src/main.o
+Position                                          APP/src/main.o
+RCC_ADCCLKConfig                                  stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_AHBPeriphClockCmd                             stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_APB1PeriphClockCmd                            stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_APB1PeriphResetCmd                            stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+RCC_APB2PeriphClockCmd                            stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_APB2PeriphResetCmd                            stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_gpio.o)
+RCC_AdjustHSICalibrationValue                     stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_BackupResetCmd                                stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_ClearFlag                                     stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_ClearITPendingBit                             stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_ClockSecuritySystemCmd                        stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_Configuration                                 APP/src/main.o
+RCC_DeInit                                        stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_GetClocksFreq                                 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+RCC_GetFlagStatus                                 stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_GetITStatus                                   stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_GetSYSCLKSource                               stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_HCLKConfig                                    stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_HSEConfig                                     stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_HSICmd                                        stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_IRQHandler                                    APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+RCC_ITConfig                                      stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_LSEConfig                                     stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_LSICmd                                        stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_MCOConfig                                     stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_PCLK1Config                                   stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_PCLK2Config                                   stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_PLLCmd                                        stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_PLLConfig                                     stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_RTCCLKCmd                                     stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_RTCCLKConfig                                  stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_SYSCLKConfig                                  stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RCC_USBCLKConfig                                  stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+RCC_WaitForHSEStartUp                             stm32f10x_lib/libstm32.a(stm32f10x_rcc.o)
+                                                  APP/src/main.o
+RTCAlarm_IRQHandler                               APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+RTC_IRQHandler                                    APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+Reset_Handler                                     stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+RxD0Interrupt                                     APP/src/main.o
+                                                  APP/src/stm32f10x_it.o
+RxDByte_DXL                                       APP/src/main.o
+                                                  APP/src/dxl_hal.o
+SDIO_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+SPI1_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+SPI2_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+SPI3_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+SVCHandler                                        APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+StartDiscount                                     APP/src/main.o
+                                                  APP/src/dxl_hal.o
+SysTickHandler                                    APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+SysTick_CLKSourceConfig                           stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+SysTick_Configuration                             APP/src/main.o
+SysTick_CounterCmd                                stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+                                                  APP/src/main.o
+SysTick_GetCounter                                stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+SysTick_GetFlagStatus                             stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+SysTick_ITConfig                                  stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+                                                  APP/src/main.o
+SysTick_SetReload                                 stm32f10x_lib/libstm32.a(stm32f10x_systick.o)
+                                                  APP/src/main.o
+TAMPER_IRQHandler                                 APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM1_BRK_IRQHandler                               APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM1_CC_IRQHandler                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM1_TRG_COM_IRQHandler                           APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM1_UP_IRQHandler                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM2_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM3_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM4_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM5_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM6_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM7_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM8_BRK_IRQHandler                               APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM8_CC_IRQHandler                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM8_TRG_COM_IRQHandler                           APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM8_UP_IRQHandler                                APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+TIM_ARRPreloadConfig                              stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_BDTRConfig                                    stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_BDTRStructInit                                stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_CCPreloadControl                              stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_CCxCmd                                        stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_CCxNCmd                                       stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ClearFlag                                     stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ClearITPendingBit                             stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_ClearOC1Ref                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ClearOC2Ref                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ClearOC3Ref                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ClearOC4Ref                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_Cmd                                           stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_CounterModeConfig                             stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_CtrlPWMOutputs                                stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_DMACmd                                        stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_DMAConfig                                     stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_DeInit                                        stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_ETRClockMode1Config                           stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ETRClockMode2Config                           stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ETRConfig                                     stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_EncoderInterfaceConfig                        stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ForcedOC1Config                               stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ForcedOC2Config                               stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ForcedOC3Config                               stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ForcedOC4Config                               stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_GenerateEvent                                 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_GetCapture1                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_GetCapture2                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_GetCapture3                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_GetCapture4                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_GetCounter                                    stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_GetFlagStatus                                 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_GetITStatus                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_GetPrescaler                                  stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ICInit                                        stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ICStructInit                                  stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_ITConfig                                      stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_ITRxExternalClockConfig                       stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_InternalClockConfig                           stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC1FastConfig                                 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC1Init                                       stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_OC1NPolarityConfig                            stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC1PolarityConfig                             stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC1PreloadConfig                              stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_OC2FastConfig                                 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC2Init                                       stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC2NPolarityConfig                            stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC2PolarityConfig                             stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC2PreloadConfig                              stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC3FastConfig                                 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC3Init                                       stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC3NPolarityConfig                            stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC3PolarityConfig                             stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC3PreloadConfig                              stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC4FastConfig                                 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC4Init                                       stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC4PolarityConfig                             stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OC4PreloadConfig                              stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_OCStructInit                                  stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_PWMIConfig                                    stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_PrescalerConfig                               stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_SelectCCDMA                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SelectCOM                                     stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SelectHallSensor                              stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SelectInputTrigger                            stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SelectMasterSlaveMode                         stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SelectOCxM                                    stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SelectOnePulseMode                            stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SelectOutputTrigger                           stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SelectSlaveMode                               stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SetAutoreload                                 stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SetClockDivision                              stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SetCompare1                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_SetCompare2                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SetCompare3                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SetCompare4                                   stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SetCounter                                    stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SetIC1Prescaler                               stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SetIC2Prescaler                               stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SetIC3Prescaler                               stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_SetIC4Prescaler                               stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_TIxExternalClockConfig                        stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_TimeBaseInit                                  stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_TimeBaseStructInit                            stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+                                                  APP/src/main.o
+TIM_UpdateDisableConfig                           stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TIM_UpdateRequestConfig                           stm32f10x_lib/libstm32.a(stm32f10x_tim.o)
+TimerInterrupt_1ms                                APP/src/main.o
+                                                  APP/src/stm32f10x_it.o
+Timer_Configuration                               APP/src/main.o
+TxDByte16                                         APP/src/main.o
+TxDByte_DXL                                       APP/src/main.o
+                                                  APP/src/dxl_hal.o
+TxDByte_PC                                        APP/src/main.o
+TxDString                                         APP/src/main.o
+TxDWord16                                         APP/src/main.o
+UART4_IRQHandler                                  APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+UART5_IRQHandler                                  APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+USART1_Configuration                              APP/src/main.o
+                                                  APP/src/dxl_hal.o
+USART1_IRQHandler                                 APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+USART2_IRQHandler                                 APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+USART3_IRQHandler                                 APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+USART_ClearFlag                                   stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_ClearITPendingBit                           stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_ClockInit                                   stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_ClockStructInit                             stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_Cmd                                         stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                                  APP/src/main.o
+USART_Configuration                               APP/src/main.o
+USART_DMACmd                                      stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_DeInit                                      stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                                  APP/src/main.o
+USART_GetFlagStatus                               stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                                  APP/src/main.o
+USART_GetITStatus                                 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                                  APP/src/main.o
+USART_HalfDuplexCmd                               stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_ITConfig                                    stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                                  APP/src/main.o
+USART_Init                                        stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                                  APP/src/main.o
+USART_IrDACmd                                     stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_IrDAConfig                                  stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_LINBreakDetectLengthConfig                  stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_LINCmd                                      stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_ReceiveData                                 stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                                  APP/src/main.o
+USART_ReceiverWakeUpCmd                           stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_SendBreak                                   stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_SendData                                    stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                                  APP/src/main.o
+USART_SetAddress                                  stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_SetGuardTime                                stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_SetPrescaler                                stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_SmartCardCmd                                stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_SmartCardNACKCmd                            stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USART_StructInit                                  stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+                                                  APP/src/main.o
+USART_WakeUpConfig                                stm32f10x_lib/libstm32.a(stm32f10x_usart.o)
+USBWakeUp_IRQHandler                              APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+USB_HP_CAN_TX_IRQHandler                          APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+USB_LP_CAN_RX0_IRQHandler                         APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+UsageFaultException                               APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+Voltage                                           APP/src/main.o
+WWDG_IRQHandler                                   APP/src/stm32f10x_it.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+_Jv_RegisterClasses                               c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+__BASEPRICONFIG                                   stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+__DMB                                             stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__DSB                                             stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__GetBASEPRI                                      stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+__ISB                                             stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__ISR_DELAY                                       APP/src/main.o
+                                                  APP/src/stm32f10x_it.o
+__MRS_CONTROL                                     stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__MRS_MSP                                         stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__MRS_PSP                                         stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__MSR_CONTROL                                     stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__MSR_MSP                                         stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__MSR_PSP                                         stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__RESETFAULTMASK                                  stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+__RESETPRIMASK                                    stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+__REV_HalfWord                                    stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__REV_Word                                        stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__SETFAULTMASK                                    stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+__SETPRIMASK                                      stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_nvic.o)
+__SEV                                             stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__SVC                                             stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+__WFE                                             stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+__WFI                                             stm32f10x_lib/libstm32.a(cortexm3_macro.o)
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_pwr.o)
+__bss_end__                                       c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+__bss_start__                                     c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+__call_exitprocs                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+__deregister_frame_info                           c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+__dso_handle                                      c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+__fini_array_end                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+__fini_array_start                                c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+__init_array_end                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+__init_array_start                                c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+__libc_fini_array                                 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+__libc_init_array                                 c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+__preinit_array_end                               c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+__preinit_array_start                             c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+__register_exitproc                               c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+__register_frame_info                             c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crtbegin.o
+__stack                                           c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+_ebss                                             stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+_edata                                            stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+_estack                                           stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+_exit                                             c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+_fini                                             c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+_global_impure_ptr                                c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__call_atexit.o)
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-__atexit.o)
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+_impure_ptr                                       c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-impure.o)
+_init                                             c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/crti.o
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-init.o)
+_mainCRTStartup                                   c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+_sbss                                             stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+_sdata                                            stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+_sidata                                           stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+_start                                            c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+atexit                                            c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-atexit.o)
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+bMoving                                           APP/src/main.o
+capture                                           APP/src/main.o
+dxl_get_highbyte                                  APP/src/dynamixel.o
+dxl_get_lowbyte                                   APP/src/dynamixel.o
+dxl_get_result                                    APP/src/dynamixel.o
+                                                  APP/src/main.o
+dxl_get_rxpacket_error                            APP/src/dynamixel.o
+dxl_get_rxpacket_length                           APP/src/dynamixel.o
+dxl_get_rxpacket_parameter                        APP/src/dynamixel.o
+dxl_hal_clear                                     APP/src/dxl_hal.o
+                                                  APP/src/dynamixel.o
+dxl_hal_close                                     APP/src/dxl_hal.o
+                                                  APP/src/dynamixel.o
+dxl_hal_open                                      APP/src/dxl_hal.o
+                                                  APP/src/dynamixel.o
+dxl_hal_rx                                        APP/src/dxl_hal.o
+                                                  APP/src/dynamixel.o
+dxl_hal_set_timeout                               APP/src/dxl_hal.o
+                                                  APP/src/dynamixel.o
+dxl_hal_timeout                                   APP/src/dxl_hal.o
+                                                  APP/src/dynamixel.o
+dxl_hal_tx                                        APP/src/dxl_hal.o
+                                                  APP/src/dynamixel.o
+dxl_initialize                                    APP/src/dynamixel.o
+                                                  APP/src/main.o
+dxl_makeword                                      APP/src/dynamixel.o
+dxl_ping                                          APP/src/dynamixel.o
+dxl_read_byte                                     APP/src/dynamixel.o
+                                                  APP/src/main.o
+dxl_read_word                                     APP/src/dynamixel.o
+dxl_rx_packet                                     APP/src/dynamixel.o
+dxl_set_txpacket_id                               APP/src/dynamixel.o
+dxl_set_txpacket_instruction                      APP/src/dynamixel.o
+dxl_set_txpacket_length                           APP/src/dynamixel.o
+dxl_set_txpacket_parameter                        APP/src/dynamixel.o
+dxl_terminate                                     APP/src/dynamixel.o
+dxl_tx_packet                                     APP/src/dynamixel.o
+dxl_txrx_packet                                   APP/src/dynamixel.o
+dxl_write_byte                                    APP/src/dynamixel.o
+dxl_write_word                                    APP/src/dynamixel.o
+                                                  APP/src/main.o
+exit                                              c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-exit.o)
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+g_pfnVectors                                      stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+gbCommStatus                                      APP/src/dynamixel.o
+gbInstructionPacket                               APP/src/dynamixel.o
+gbRxBufferReadPointer                             APP/src/main.o
+gbRxBufferWritePointer                            APP/src/main.o
+gbRxGetLength                                     APP/src/dynamixel.o
+gbRxPacketLength                                  APP/src/dynamixel.o
+gbStatusPacket                                    APP/src/dynamixel.o
+gbpRxInterruptBuffer                              APP/src/main.o
+giBusUsing                                        APP/src/dynamixel.o
+gw1msCounter                                      APP/src/main.o
+gwTimingDelay                                     APP/src/main.o
+hardware_init_hook                                c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+id1                                               APP/src/main.o
+id10                                              APP/src/main.o
+id11                                              APP/src/main.o
+id12                                              APP/src/main.o
+id13                                              APP/src/main.o
+id14                                              APP/src/main.o
+id15                                              APP/src/main.o
+id16                                              APP/src/main.o
+id17                                              APP/src/main.o
+id18                                              APP/src/main.o
+id2                                               APP/src/main.o
+id3                                               APP/src/main.o
+id4                                               APP/src/main.o
+id5                                               APP/src/main.o
+id6                                               APP/src/main.o
+id7                                               APP/src/main.o
+id8                                               APP/src/main.o
+id9                                               APP/src/main.o
+mDelay                                            APP/src/main.o
+main                                              APP/src/main.o
+                                                  stm32f10x_lib/libstm32.a(stm32f10x_vector.o)
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+memset                                            c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib\libc.a(lib_a-memset.o)
+                                                  c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+software_init_hook                                c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+start                                             c:/users/gilmar/dropbox/l008 - bloco delta/trabalho/pdpd/pdpd libs/winarm/bin/../lib/gcc/arm-eabi/4.3.0/../../../../arm-eabi/lib/crt0.o
+wPresentPos                                       APP/src/main.o

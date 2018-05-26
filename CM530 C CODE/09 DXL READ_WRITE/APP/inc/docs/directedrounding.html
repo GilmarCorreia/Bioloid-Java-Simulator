@@ -1,0 +1,1138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 1.1.0  (Win32)">
+	<META NAME="CREATED" CONTENT="20030911;14523300">
+	<META NAME="CHANGED" CONTENT="20030929;13301106">
+	<STYLE>
+	<!--
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="ro-RO" DIR="LTR">
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>Floating-point
+numbers</FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3>	The Java
+Language Specification specifies that the floating-point types
+available in the language, namely <I>float</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>double</I><SPAN STYLE="font-style: normal">, are
+</SPAN><I>conceptually associated</I><SPAN STYLE="font-style: normal">
+with the single-precision </SPAN><I>32</I><SPAN STYLE="font-style: normal">-bit
+and double-precision </SPAN><I>64</I><SPAN STYLE="font-style: normal">-bit
+format </SPAN><I>IEEE 754</I><SPAN STYLE="font-style: normal"> values
+and operations</SPAN>. It means that they are not the same, but have
+many in common. Fortunately, the designers of Java used the same bit
+layout as the corresponding IEEE values, or at least provide access
+to the IEEE standard bit layout, by the methods
+<I>Float.floatToRawIntBits</I>, <I>Float.intBitsToFloat</I>,
+<I>Double.doubleToRawLongBits</I> and <I>Double.longBitsToDouble</I>.
+From now on, we make no difference between Java's float and double
+types, and the single-precision and double-precision floating point
+values as defined by the IEEE 754 standard in this document. The
+extended-exponent floating-point value set does not have a
+corresponding type in the Java language, even if such values, can
+appear as intermediate results. Anyway, Java comes with its own
+definition of extended exponent value sets.	</FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3>	Described in a
+few words, the single and double precision floating point numbers can
+be represented as <I><FONT FACE="Times New Roman, serif">&plusmn;</FONT>(b<SUB>0</SUB>.b<SUB>1</SUB>b<SUB>2</SUB>...b<SUB>p
+&ndash; 1</SUB>)<SUB>2</SUB> * 2<SUP>E</SUP></I>. For <I>subnormal</I>
+numbers and zero, <I>b</I><I><SUB>0</SUB> = 0</I> and <I>E = E</I><I><SUB>min</SUB></I>.
+For <I>normalized</I> numbers, <I>b</I><I><SUB>0</SUB> = 1</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>L <FONT FACE="Times New Roman, serif">&le;</FONT> E <FONT FACE="Times New Roman, serif">&le;</FONT>
+U. </I><SPAN STYLE="font-style: normal">Single precision numbers have
+</SPAN><I>p = 24</I><SPAN STYLE="font-style: normal">, </SPAN><I>L =
+-126 </I><SPAN STYLE="font-style: normal">and</SPAN><I> U = +127</I><SPAN STYLE="font-style: normal">,
+while </SPAN>for double precision numbers these format-dependent
+constants are  <I>p = 53</I><SPAN STYLE="font-style: normal">, </SPAN><SPAN STYLE="font-style: normal">L</SPAN><I>
+= -1022 </I><SPAN STYLE="font-style: normal">and</SPAN><I> </I><I>U =
++1023</I><SPAN STYLE="font-style: normal">.</SPAN></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal"><FONT SIZE=3>	One
+limitation of the two floating point formats is that not every number
+can be represented exactly.</FONT></SPAN> For instance, the simple
+number <FONT FACE="Times New Roman, serif">&#8531;</FONT> has an
+infinite representation in both the binary and decimal number
+systems, while <I>1/10</I><SPAN STYLE="font-style: normal"> has an
+infinite representation in the binary system</SPAN> <SPAN STYLE="font-style: normal">and
+a finite representation in the decimal number system.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN STYLE="font-style: normal">	The
+inclusion of </SPAN><I>NaN</I><SPAN STYLE="font-style: normal">
+introduces an unordered relation in both floating point value sets.
+The inclusion of subnormal numbers permits </SPAN><I>gradual
+underflow</I><SPAN STYLE="font-style: normal">, filling the gap
+between </SPAN><FONT FACE="Times New Roman, serif"><I>&plusmn; </I><SPAN STYLE="font-style: normal">the
+smallest normal number, making the gap between adjacent
+floating-point numbers not widen</SPAN></FONT> suddenly as zero is
+passed. The predicates <I>x == y</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>x &ndash; y = 0</I><SPAN STYLE="font-style: normal">
+become identical due to gradual underflow. An important theorem for
+the attenuation of roundoff in numerical computation is also enabled
+by the gradual underflow:</SPAN></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><FONT SIZE=3>	</FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN STYLE="font-style: normal">	</SPAN><I>Theorem
+1</I><SPAN STYLE="font-style: normal">. If </SPAN><I>a</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>b</I><SPAN STYLE="font-style: normal"> are floating
+point numbers in the same format such that </SPAN><I>&frac12; <FONT FACE="Times New Roman, serif">&le;
+a/b &le; 2</FONT></I><FONT FACE="Times New Roman, serif"><SPAN STYLE="font-style: normal">
+then </SPAN><I>a &ndash; b</I><SPAN STYLE="font-style: normal"> is
+computable exactly (without a rounding error) in the same floating
+point format.</SPAN></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	Note that if underflow is
+not gradual, and if <I>a &ndash; b</I><SPAN STYLE="font-style: normal">
+underflows, the result is not exact any longer.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=4>	</FONT><FONT SIZE=3>A
+floating point number can sometimes be thought of as an <I>interval</I><SPAN STYLE="font-style: normal">
+which contains all numbers which are closer to it than to any other
+floating point number. For a normal number </SPAN><I>b</I><SPAN STYLE="font-style: normal">,
+this interval is </SPAN><I>(b(1 &minus; 2<SUP>&minus;p</SUP>), b(1 +
+2<SUP>&minus;p</SUP>)) = b(1 &minus; 2<SUP>&minus;p</SUP>, 1 + 2<SUP>&minus;p</SUP>)</I><SPAN STYLE="font-style: normal">.</SPAN></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN STYLE="font-style: normal">	Let
+</SPAN><I>a</I><SPAN STYLE="font-style: normal"> and </SPAN><I>b</I><SPAN STYLE="font-style: normal">
+be floating point numbers from the same value set, and let </SPAN><I>+</I><SPAN STYLE="font-style: normal">,
+</SPAN><I>-</I><SPAN STYLE="font-style: normal">, </SPAN><I>*</I><SPAN STYLE="font-style: normal">,
+</SPAN><I>/</I><SPAN STYLE="font-style: normal"> denote the four
+standard arithmetic operations (we call a generic element of this set
+</SPAN><I>o</I><SPAN STYLE="font-style: normal">). The result of such
+an arithmetic operation on two floating point numbers often happens
+not to be a floating point number. Let </SPAN><I><FONT FACE="Times New Roman, serif">&#61442;</FONT>(a
++ b)</I><SPAN STYLE="font-style: normal">, </SPAN><I><FONT FACE="Times New Roman, serif">&#61442;</FONT>(a
+&ndash; b), <FONT FACE="Times New Roman, serif">&#61442;</FONT>(a *
+b)</I><SPAN STYLE="font-style: normal"> and </SPAN><I><FONT FACE="Times New Roman, serif">&#61442;</FONT>(a
+/ b)</I><SPAN STYLE="font-style: normal"> denote the result computed
+in floating point arithmetic. These numbers are always floating point
+numbers</SPAN></FONT>.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	<I>Definition 1</I><SPAN STYLE="font-style: normal">.
+Suppose </SPAN><I>b <FONT FACE="Times New Roman, serif">&ne;</FONT> 0
+</I><SPAN STYLE="font-style: normal">if </SPAN><I>o = / </I><SPAN STYLE="font-style: normal">and
+let </SPAN><I>c = a o b</I><SPAN STYLE="font-style: normal"> exactly.</SPAN>
+Let <I>x</I><SPAN STYLE="font-style: normal"> and </SPAN><I>y</I><SPAN STYLE="font-style: normal">
+be consecutive floating point numbers with the same sign as </SPAN><I>c</I><SPAN STYLE="font-style: normal">
+such that </SPAN><I>|x| <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;
+|c| &lt; |y|.</FONT></FONT></I> Then the floating point arithmetic is
+called <I>faithful</I><SPAN STYLE="font-style: normal"> if </SPAN><FONT SIZE=3><I><FONT FACE="Times New Roman, serif">&#61442;</FONT>(a
+o b) = x</I><SPAN STYLE="font-style: normal"> whenever </SPAN><I>c =
+x</I><SPAN STYLE="font-style: normal"> and </SPAN><I><FONT FACE="Times New Roman, serif">&#61442;</FONT>(a
+o b)</I><SPAN STYLE="font-style: normal"> is either </SPAN><I>x</I><SPAN STYLE="font-style: normal">
+or </SPAN><I>y</I><SPAN STYLE="font-style: normal"> whenever </SPAN><I>c
+<FONT FACE="Times New Roman, serif">&ne; x</FONT></I><FONT FACE="Times New Roman, serif"><SPAN STYLE="font-style: normal">.</SPAN></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	Any arithmetic which
+conforms to the <SPAN STYLE="font-style: normal">IEEE 754</SPAN><I>
+</I><SPAN STYLE="font-style: normal">or IEEE 854</SPAN><I> </I><SPAN STYLE="font-style: normal">is
+</SPAN><I>faithful, </I><SPAN STYLE="font-style: normal">and t</SPAN>he
+Java floating point arithmetic is also <I>faithful</I><SPAN STYLE="font-style: normal">.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>Rounding mode
+control</FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	A
+required feature of the IEEE</SPAN><I> </I><SPAN STYLE="font-style: normal">standard
+is its provision for </SPAN><I>rounding control</I><SPAN STYLE="font-style: normal">.
+A standard-compliant hardware or software environment must allow the
+programmer to specify the direction in which computed results are
+rounded to representable numbers. This feature is actually essential
+for the implementation of self-validated computation models, and also
+useful in detecting the numerical instability of programs.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	The only rounding mode
+supported by Java is <I>round-to-nearest</I><SPAN STYLE="font-style: normal">.
+An arithmetic operation is said to be </SPAN><I>correctly rounded</I><SPAN STYLE="font-style: normal">
+when it's result is rounded to the nearest floating point number. It
+behaves as if it first computed a result exactly and then rounded it
+to the floating point number closest to the exact result. In case of
+a tie, the number with the least significant bit of the fraction zero
+is returned (in other words, the rounded result is the </SPAN><I>even</I><SPAN STYLE="font-style: normal">
+one with its last bit zero). That means that the result of an
+operation with single format floating point numbers is accurate to </SPAN><I>24</I><SPAN STYLE="font-style: normal">
+bits (</SPAN><I>7</I><SPAN STYLE="font-style: normal"> decimal
+digits), while the result of an operation with double format numbers
+is accurate to </SPAN><I>53</I><SPAN STYLE="font-style: normal"> bits
+(about </SPAN><I>16</I><SPAN STYLE="font-style: normal"> decimal
+digits). The </SPAN><I>round-to-nearest</I><SPAN STYLE="font-style: normal">
+mode has the property that </SPAN><I>0 <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;
+roundoff &le; &frac12; ulp </FONT></FONT></I><FONT SIZE=3><FONT FACE="Times New Roman, serif"><SPAN STYLE="font-style: normal">of
+the computed result, where </SPAN><I>ulp</I><SPAN STYLE="font-style: normal">
+stands for </SPAN><I>unit in the last place </I><SPAN STYLE="font-style: normal">(</SPAN><I>the
+last place</I><SPAN STYLE="font-style: normal"> is the least
+significant bit of the fraction in its standard representation).
+Taking gradual underflow into account, </SPAN><I>&#61442;(a o b) = (a
+o b)(1 + &epsilon;) + &eta;, |&epsilon;| &le; 2</I><I><SUP>-p</SUP>,
+|&eta;| &le; 2<SUP>L - p</SUP>,  &epsilon;&eta; = 0 </I><SPAN STYLE="font-style: normal">unless
+</SPAN><I>&#61442;(a o b) </I><SPAN STYLE="font-style: normal">overflows</SPAN></FONT></FONT>.
+Here <FONT SIZE=3><FONT FACE="Times New Roman, serif"><I>&epsilon;
+</I><SPAN STYLE="font-style: normal">expresses the relative error
+that occurs when |</SPAN><I>&#61442;(a o b)| </I><SPAN STYLE="font-style: normal">is
+larger than or equal to the underflow threshold 2</SPAN><SPAN STYLE="font-style: normal"><SUP>L</SUP>.
+For denormalized results, </SPAN><I>&eta; </I><SPAN STYLE="font-style: normal">expresses
+the absolute error.</SPAN></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	The
+IEEE standard requires three additional rounding modes:
+</SPAN><I>round-to-zero</I><SPAN STYLE="font-style: normal">,
+</SPAN><I>round-to-infinity</I><SPAN STYLE="font-style: normal"> and
+</SPAN><I>round-to-negative infinity</I><SPAN STYLE="font-style: normal">.
+All these modes are required to be </SPAN><I>dynamic</I><SPAN STYLE="font-style: normal">;
+the programmer should be able at any time to use the desired rounding
+mode.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	In
+all rounding modes, if the result of an operation is exactly
+representable, then the operations is computed exactly. Otherwise,
+the result must be between two consecutive floating point values, or
+it can be an infinity or NaN. If finite, the </SPAN>rounding mode
+dictates which of the two adjacent floating point values becomes the
+result. If infinite, it dictates whether that infinity or the maximum
+finite value of the same sign becomes the result. If the operation is
+invalid (or either operand is a NaN), in all rounding modes the
+result of the operation is also a NaN value. There are also some not
+so intuitive rules for directed rounding in the <SPAN STYLE="font-style: normal">IEEE
+standard that</SPAN> need to be specified: When the sum of two
+operands with opposite signs (or the difference of two operands with
+like signs) is exactly zero, the sign of that sum (or difference)
+shall be <I>+</I> in all rounding modes except <I>round-to-negative
+infinity</I>, in which mode that sign shall be <I>-</I><SPAN STYLE="font-style: normal">.</SPAN>
+However, <I>x + x = x - (-x)</I> retains the same sign as <I>x</I>
+even when <I>x</I> is zero. Also, every valid square root shall have
+a positive sign except that <I>sqrt(-0)</I> shall be <I>-0</I>.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>Directed
+rounding public interface</FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3>	The
+round-to-infinity and <SPAN STYLE="font-style: normal">round-to-negative
+infinity</SPAN> modes are made available by the public interface
+<I>RoundingModeControl</I>. Because of Java's lack of ref/out
+parameters, all the methods that should perform an operation in both
+rounding modes, have two overloads: one that creates a double array
+of two elements with the results, and one that accepts an existing
+double array, with a start index. </FONT>All the methods with a
+<I>double[]</I>  and an <I>int</I> <I>start</I> parameter throw
+ArrayIndexOutOfBoundsException if the given array does not have the
+<I>start</I> and <I>start + 1</I> elements. Methods ending in
+<I>RoundFloor</I> round the result towards negative infinity, while
+those ending in <I>RoundCeiling</I> round the result towards positive
+infinity. These names were chosen to be similar to the constants in
+<I>BigDecimal</I>. The open intervals computed by the methods with a
+<I>double[]</I> parameter cannot contain any finite double precision
+number. If an operation result is exactly representable, it is
+guaranteed that the exact result is computed (and represented by an
+empty interval with lower bound equal to the upper bound and equal to
+that exact value). For addition and subtraction, there is a special
+case when the exact result is zero as described above.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	A <I>RoundingModeControl</I>
+object can always be used as a <I>LooseRoundingModeControl</I>. The
+latter interface represents the same directions for rounding control,
+but permits larger errors in computation than the IEEE standard
+requires. More specifically, the open intervals computed by the
+methods with a <I>double[]</I> parameter can contain <I>at most one
+double precision number</I>. If an operation result is exactly
+representable, there is no guarantee that the exact result is
+computed, rather than an open interval that contains the result. This
+interface can be implemented in software much more efficiently than
+<I>RoundingModeControl</I>.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>Directed
+rounding implementation details</FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	One of the aims of this
+project is to provide directed rounding control for the elementary
+operations, and also for the computation of transcendental functions.
+The first version of the project provides the <I>round-to-infinity</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>round-to-negative infinity</I><SPAN STYLE="font-style: normal">
+modes for the </SPAN><I>+</I><SPAN STYLE="font-style: normal">,</SPAN><I>
+-</I><SPAN STYLE="font-style: normal">,</SPAN><I> *</I><SPAN STYLE="font-style: normal">
+and </SPAN><I> / </I><SPAN STYLE="font-style: normal">operations</SPAN><I>
+</I><SPAN STYLE="font-style: normal">and the </SPAN><I>square</I><SPAN STYLE="font-style: normal">,</SPAN><I>
+sqrt </I>and <I>exp </I><SPAN STYLE="font-style: normal">functions,
+with double-precision operands. The basic idea is to compute the
+operation with an error bound less than </SPAN><I>1 ulp</I><SPAN STYLE="font-style: normal">,
+and then partially compute the same operation, with enough accuracy
+to determine in which direction the initial result was rounded (if at
+all). The result of the operation is therefore the </SPAN>initial<SPAN STYLE="font-style: normal">
+result if it was exact, or the previous/next value in the double
+value set. A </SPAN><I>correctly rounded</I><SPAN STYLE="font-style: normal">
+result has an error bound less than or equal to </SPAN><I>0.5 ulp</I><SPAN STYLE="font-style: normal">,
+so it is always less than </SPAN><I>1 ulp</I><SPAN STYLE="font-style: normal">.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	The
+purely managed implementations of the two interfaces are
+</SPAN><I>ManagedRoundingModeControl</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>ManagedLooseRoundingModeControl.</I><SPAN STYLE="font-style: normal">
+These and other important classes are described below. The javadoc
+generated documentation should also be consulted for further
+information.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	Unit
+tests can be found in the package
+</SPAN><I>tests.precisefloating.directedrounding</I><SPAN STYLE="font-style: normal">.
+Rounding boundary cases based on a simplified version of </SPAN><I>Hensel
+lifting</I><SPAN STYLE="font-style: normal"> will be included in
+future.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4><I>precisefloating.Formulas</I></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	For
+a positive finite value, the smallest value greater than </SPAN><I>x</I><SPAN STYLE="font-style: normal">
+is actually with </SPAN><I>next(x) =
+Double.longBitsToDouble(Double.doubleToLongBits(x) + 1)</I><SPAN STYLE="font-style: normal">.
+That is true because the order relation between positive finite
+floating point values is the same as the order relation between their
+respective </SPAN><I>long</I><SPAN STYLE="font-style: normal">
+representations. Also, </SPAN><I>previous(x) =
+Double.longBitsToDouble(Double.doubleToLongBits(x) &ndash; 1)</I><SPAN STYLE="font-style: normal">.
+For negative values, the following identities apply: </SPAN><I>next(x)
+= -previous(-x)</I><SPAN STYLE="font-style: normal"> and </SPAN><I>previous(x)
+= -next(-x)</I><SPAN STYLE="font-style: normal">. These and related
+functions are included in the </SPAN><I>Formulas</I><SPAN STYLE="font-style: normal">
+class. Also the greatest subnormal number, the smallest normal
+number, the bits of the negative and positive zero values and tables
+of the powers of two are included in the </SPAN><I>Formulas</I><SPAN STYLE="font-style: normal">
+class.</SPAN> The highest/lowest set bit in a number are computed by
+the splitting the respective number into parts of 16 bits, and then
+simply indexing into an array of approximately <I>2^16 </I><SPAN STYLE="font-style: normal">length,
+by the overloaded methods </SPAN><I>highestSetBit</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>lowestSetBit</I><SPAN STYLE="font-style: normal">.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	The
+</SPAN><I>Formulas.pow2</I><SPAN STYLE="font-style: normal"> computes
+a two power in double precision, but it never accepts an underflow.
+If the exact value is not exactly representable in double precision
+and has magnitude less than </SPAN><I>Double.MAX_VALUE</I><SPAN STYLE="font-style: normal">,
+</SPAN><I>Formulas.pow2</I><SPAN STYLE="font-style: normal"> throws
+an </SPAN><I>ArithmeticException</I><SPAN STYLE="font-style: normal">.
+This actually happens iff the exponent is less than </SPAN><I>-1074</I><SPAN STYLE="font-style: normal">.
+If the exponent is greater than </SPAN><I>1023</I><SPAN STYLE="font-style: normal">,
+</SPAN><I>positive infinity</I><SPAN STYLE="font-style: normal"> is
+returned. Generally we are not afraid of overflow in floating point
+operations in this library, because the results of such an overflowed
+operation contains the information that it is not actually an exactly
+computed result. On the other hand, an operation whose exact result
+is not drawn from the floating point value set, if rounded, looses
+the information </SPAN>that it was not an exact result. The second
+case often results in an <I>ArithmeticException </I><SPAN STYLE="font-style: normal">being
+thrown.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	In
+general, the methods in the </SPAN><I>Formulas</I><SPAN STYLE="font-style: normal">
+class</SPAN> are very small, and their performance depend drastically
+on the jitter's inlining capability. We did not sacrifice good <I>OOP</I>
+rules for performance.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4><I>precisefloating.DoublePrecisionNo</I></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	At the core of our directed
+rounding implementation stays the <I>DoublePrecisionNo</I> class. It
+would better a structure (value-type), but Java lacks this
+functionality. An instance of this class can represent any nonzero
+finite double precision value, and more. Anyway, it is usually used
+to split a finite double precision number into its parts and to
+represent it in some kind of canonical form <I>m * 2<SUP>e &ndash;
+52</SUP></I><SPAN STYLE="font-style: normal">, where </SPAN><I>m</I><SPAN STYLE="font-style: normal">
+is always an </SPAN><I>odd </I><SPAN STYLE="font-style: normal">number.
+For a finite double precision value, the sign bit, the exponent and
+the fraction parts are extracted using the operations </SPAN><I>bits
+&amp; 0x8000000000000000L</I><SPAN STYLE="font-style: normal">, </SPAN><I>(bits
+&gt;&gt; 52) &amp; 0x7FF </I><SPAN STYLE="font-style: normal">and
+</SPAN><I>bits &amp; 0x000FFFFFFFFFFFFFL</I><SPAN STYLE="font-style: normal">.
+When a finite nonzero double value is represented in the form with
+odd mantissa, it is guaranteed that </SPAN><I>-9007199254740991 <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;</FONT></FONT>
+m <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;</FONT></FONT>
+9007199254740991, m != 0</I><SPAN STYLE="font-style: normal"> and
+</SPAN><I>-1022 <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;</FONT></FONT>
+e <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;</FONT></FONT>
+1075</I><SPAN STYLE="font-style: normal">. The mantissa can be
+represented with </SPAN><I>54</I><SPAN STYLE="font-style: normal">
+bits </SPAN>as a signed integer. We use the 64-bit <I>long</I><SPAN STYLE="font-style: normal">
+data type, as it is the only available primitive integral type with
+enough room. Also, for finite nonzero double values, </SPAN><I>12</I><SPAN STYLE="font-style: normal">
+bits are enough to represent the </SPAN><I>exponent. </I><SPAN STYLE="font-style: normal">Even
+if the </SPAN><I>short</I><SPAN STYLE="font-style: normal"> data type
+would be large enough to represent it, we chose </SPAN><I>int</I><SPAN STYLE="font-style: normal">
+to avoid the cost of the implicit widening conversions between </SPAN><I>short</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>int</I><SPAN STYLE="font-style: normal">.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	Actually,
+the single operation supported by the </SPAN><I>DoublePrecisionNo</I><SPAN STYLE="font-style: normal">
+class is the comparison operation.</SPAN> The comparison works well
+on any two instances, no matter if they actually represent (nonzero)
+finite or overflowed double values. Consider we have to compare <I>this</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>that</I><SPAN STYLE="font-style: normal"> instances.
+The trivial cases when mantissa and exponent are the same, </SPAN>of
+the two mantissas have different signs, are treated first. If none of
+these trivial cases occurs, than the ordering relation can be deduced
+from the ordering of the absolute values. In order to be compared,
+the two numbers are first aligned to have the same exponent:</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>long exp,
+thatExp;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>if (e &lt;
+that.e) {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>exp = 0;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>thatExp =
+(long) that.e - (long) e;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>} else {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>exp = (long)
+e - (long) that.e;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>thatExp = 0;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><I>	T</I><SPAN STYLE="font-style: normal">he
+operations here are made using the </SPAN><I>long</I><SPAN STYLE="font-style: normal">
+data type, to guarantee no overflow occurs. Indeed, the worst case
+</SPAN><I>Integer.MIN_VALUE &ndash; Integer.MAX_VALUE</I><SPAN STYLE="font-style: normal">
+</SPAN>and <I>Integer.MAX_VALUE &ndash; Integer.MIN_VALUE</I> do not
+generate overflow when the operation uses <I>64</I> bit longs. After
+this step, it is asserted that the smallest of the <SPAN STYLE="font-style: normal">two
+long exponents is zero, and the other one is less than or equal to
+</SPAN><I>(long) Integer.MAX_VALUE - (long) Integer.MIN_VALUE</I><SPAN STYLE="font-style: normal">.
+Note that from now on we have actually left to compare two (possibly
+big) rational integers, so we moved from floating point numbers to
+rational integers. The highest set bits in the two rational integers
+are computed by:</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>long hsbM =
+(long) Formulas.highestSetBit(absM) + exp,</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">                <I>hsbThatM
+= (long) Formulas.highestSetBit(absThatM) + thatExp;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><I>	</I><SPAN STYLE="font-style: normal">As
+</SPAN><I>Formulas.highestSetBit</I><SPAN STYLE="font-style: normal">
+of either (positive) mantissa is at most </SPAN><I>62</I><SPAN STYLE="font-style: normal">,
+and the (positive) exponents are at most </SPAN><I>(long)
+Integer.MAX_VALUE - (long) Integer.MIN_VALUE</I><SPAN STYLE="font-style: normal">,
+overflow cannot appear in the computation of the highest set bits. If
+the two highest set bits differ, the order of the initial numbers is
+simply to obtain. Otherwise, we assert that both </SPAN><I>exp</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>thatExp </I><SPAN STYLE="font-style: normal">are less
+than or equal to </SPAN><I>62</I><SPAN STYLE="font-style: normal">.
+That is true because of the relation </SPAN><I>(long)
+Formulas.highestSetBit(absM) + exp == (long)
+Formulas.highestSetBit(absThatM) + thatExp</I><SPAN STYLE="font-style: normal">.
+If both </SPAN><I>exp</I><SPAN STYLE="font-style: normal"> and
+</SPAN><I>thatExp </I><SPAN STYLE="font-style: normal">are zero, the
+statement is true. Otherwise, exactly one of them is nonzero, and it
+is equal to a highest set bit position in a mantissa, which is
+already known to be less than or equal to </SPAN><I>62</I><SPAN STYLE="font-style: normal">.
+That lets us compute without overflow </SPAN>the long values <I>1L &lt;&lt;
+exp</I><SPAN STYLE="font-style: normal"> and </SPAN><I>1L &lt;&lt;
+thatExp</I><SPAN STYLE="font-style: normal">.</SPAN> As the highest
+set bit position of <I>m * 2<SUP>exp</SUP> </I><SPAN STYLE="font-style: normal">and</SPAN><I>
+that.m * 2</I><I><SUP>thatExp</SUP></I><SPAN STYLE="font-style: normal">,
+computed as with arbitrary precision, are also less than or equal to
+</SPAN><I>62</I><SPAN STYLE="font-style: normal">, </SPAN>the
+products <I>m * (1L &lt;&lt; exp)</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>that.m * (1L &lt;&lt; thatExp)</I><SPAN STYLE="font-style: normal">
+are guaranteed not to produce overflow.</SPAN> The order of the two
+instances to be compared is deduced from the order between these two
+long values.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	If a <I>DoublePrecisionNo</I>
+instance represents a finite nonzero value from the double value set,
+then the <I>exactFiniteDoubleValue</I><SPAN STYLE="font-style: normal">
+exactly computes that value. Otherwise it </SPAN>throws an
+<I>ArithmeticException</I>. Note that <I>new
+DoublePrecisionNo(d).getDoubleValue()</I> always returns <I>d </I><SPAN STYLE="font-style: normal">for
+any finite nonzero double value </SPAN><I>d</I>. Roughly speaking,
+the value to be computed is:</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>value = m *
+Formulas.pow2(e - Formulas.N_DOUBLE + 1);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	First,
+the </SPAN><I>m</I><SPAN STYLE="font-style: normal"> long value is
+converted to </SPAN><I>double</I><SPAN STYLE="font-style: normal">.</SPAN><I>
+If m</I><SPAN STYLE="font-style: normal"> satisfies the relation
+</SPAN><I>-2^53 &lt; m &lt; 2^53 </I><SPAN STYLE="font-style: normal">than
+the widening conversion from long to double is exact. Otherwise, it
+may be exact or not. Anyway, a </SPAN><I>DoublePrecisionNo</I><SPAN STYLE="font-style: normal">
+instance with </SPAN><I>m</I><SPAN STYLE="font-style: normal">
+outside this open interval is certainly not a finite double value.</SPAN><I>
+</I><SPAN STYLE="font-style: normal">Next, if the computation shown
+above results in an infinity, than it is certain we are not dealing
+with a finite double value. In case it is finite, the result might
+have been rounded to the nearest value, so we check for rounding
+errors. A rounding error is easily recognizable by a mantissa smaller
+that </SPAN><I>Math.abs(m)</I><SPAN STYLE="font-style: normal">,
+meaning that the least significant bits of the mantissa have been
+discarded. Because the least significant bit of </SPAN><I>Math.abs(m)
+</I><SPAN STYLE="font-style: normal">(and </SPAN><I>m</I><SPAN STYLE="font-style: normal">)
+is one, as </SPAN><I>m</I><SPAN STYLE="font-style: normal"> is an odd
+value.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4><I>precisefloating.directedrounding.ManagedRoundingModeControl</I></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><FONT SIZE=3>	</FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><FONT SIZE=3>	Pure
+managed RoundingModeControl implementation. This class is not thread
+safe.</FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal; text-decoration: none">
+<FONT SIZE=4>Addition</FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><I>	</I><SPAN STYLE="font-style: normal">First
+of all the addition is performed using the round-to-nearest mode and
+the correctly rounded result named </SPAN><I>nearest</I><SPAN STYLE="font-style: normal">.
+</SPAN></FONT>After eliminating the trivial cases when <I>nearest</I><SPAN STYLE="font-style: normal">
+is NaN or infinite, it only remains to be a finite double value. Due
+to the gradual underflow, if </SPAN><I><FONT SIZE=3><FONT FACE="Times New Roman, serif">&#61442;(</FONT></FONT>x
++ y) = 0</I><SPAN STYLE="font-style: normal"> in at least one
+rounding mode, than </SPAN><I>x + y = 0</I> exactly. Conversely, if <I>x
++ y = 0</I><SPAN STYLE="font-style: normal"> exactly, than </SPAN><I><FONT SIZE=3><FONT FACE="Times New Roman, serif">&#61442;(</FONT></FONT>x
++ y) = 0</I><SPAN STYLE="font-style: normal"> in all the IEEE
+standard rounding modes. If </SPAN><I>nearest = 0</I><SPAN STYLE="font-style: normal">,
+than the operation was completed without rounding errors, and the
+interval computed is </SPAN><I>[-0, +0] </I><SPAN STYLE="font-style: normal">with
+only two exceptions. If both </SPAN><I>x</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>y</I><SPAN STYLE="font-style: normal"> are </SPAN><I>+0.0</I><SPAN STYLE="font-style: normal">,
+the result is also </SPAN><I>+0.0</I><SPAN STYLE="font-style: normal">
+in all rounding modes. Also, if both </SPAN><I>x</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>y</I><SPAN STYLE="font-style: normal"> are </SPAN><I>-0.0</I><SPAN STYLE="font-style: normal">,
+the result is also </SPAN><I>-0.0</I><SPAN STYLE="font-style: normal">
+in all rounding modes.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	Because
+our </SPAN><I>DoublePrecisionNo</I><SPAN STYLE="font-style: normal">
+class can't handle zeroes, the case </SPAN><I>x = 0</I><SPAN STYLE="font-style: normal">
+or </SPAN><I>y = 0</I><SPAN STYLE="font-style: normal"> </SPAN>is
+treated specially. If one and only one of the operands of an addition
+is zero, the operation is exact and the result of the operation is
+the other operand.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	Now we are able to extract
+the component parts of the operands using the <I>DoublePrecisionNo
+</I><SPAN STYLE="font-style: normal">class:</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>DoublePrecisionNo
+xDpn = new DoublePrecisionNo(x);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>DoublePrecisionNo
+yDpn = new DoublePrecisionNo(y);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>if
+(xDpn.getExponent() &gt; yDpn.getExponent()) {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">           
+<I>DoublePrecisionNo aux = xDpn;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>xDpn = yDpn;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>yDpn = aux;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	The
+operands, now </SPAN><I>xDpn</I><SPAN STYLE="font-style: normal"> and
+</SPAN><I>yDpn</I><SPAN STYLE="font-style: normal"> ar</SPAN>e
+arranged such that <I>xDpn.getExponent() <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;</FONT></FONT>
+yDpn.getExponent()</I><SPAN STYLE="font-style: normal">. The exact
+sum </SPAN><I>x + y </I>is mathematically equal to <I>(xDpn.m +
+yDpn.m * 2<SUP>yDpn.e - xDpn.e</SUP>) * 2<SUP>xDpn.e &ndash; 52</SUP></I>.
+Not that the value parenthesis can be computed using only integer
+arithmetic. Remember that <I>nearest</I><SPAN STYLE="font-style: normal">
+is actually equal to </SPAN><I>nearestSum.m * 2<SUP>nearestSum.e &ndash;
+52</SUP></I><SPAN STYLE="font-style: normal">. We don't actually have
+to compute the exact sum </SPAN><I>x + y</I><SPAN STYLE="font-style: normal">;
+it is enough to determine its ordering relation with respect to the
+correctly rounded result. It is the </SPAN><I>computeOrder </I><SPAN STYLE="font-style: normal">method
+that does this comparison. First, the mantissa of at most one of the
+values to be compared is modified to accommodate the difference
+between the exponents </SPAN><I>xDpn.e </I><SPAN STYLE="font-style: normal">and
+</SPAN><I>nearestSum.e</I><SPAN STYLE="font-style: normal">. The
+order relationship between the initial values is deduced from
+comparing only the current mantissa of the two quantities.</SPAN>
+This computation requires <SPAN STYLE="font-style: normal">arbitrary
+precision integer arithmetic. We currently use the immutable
+</SPAN><I>BigInteger </I>class<SPAN STYLE="font-style: normal">, but
+we're currently looking for a library supporting mutable big
+integers. Anyway, in some cases the whole computation can be made
+using </SPAN><I>long</I><SPAN STYLE="font-style: normal"> values:</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>long absMx =
+Math.abs(xDpn.getMantissa()), absMy = Math.abs(yDpn.getMantissa());</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>int c1 =
+Formulas.highestSetBit(absMx);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>int c2 =
+Formulas.highestSetBit(absMy) + yDpn.getExponent() -
+xDpn.getExponent();</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>boolean
+sameSignum = Formulas.sameSignum(xDpn.getMantissa(),
+yDpn.getMantissa());</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>DoublePrecisionNo
+nearestSum = new DoublePrecisionNo(nearest);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>int order;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>if (Math.max(c1,
+c2) &lt;= 61 + (sameSignum ? 0 : 1)) {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>log.finest(&quot;long
+is enough&quot;);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>long mantissa
+= xDpn.getMantissa() + (yDpn.getMantissa() &lt;&lt;
+(yDpn.getExponent() - xDpn.getExponent()));</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">           
+<I>DoublePrecisionNo exact = new DoublePrecisionNo(mantissa,
+xDpn.getExponent(), false);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>order =
+exact.compareTo(nearestSum);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>assert order
+!= 0 || nearest == exact.exactFiniteDoubleValue();</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	If
+</SPAN><I>xDpn.m </I><SPAN STYLE="font-style: normal">and the
+arbitrary precision quantity </SPAN><I>yDpn.m * 2<SUP>yDpn.e &ndash;
+xDpn.e</SUP></I><SPAN STYLE="font-style: normal"> have the same sign,
+and, mathematically speaking, </SPAN><I>max(abs(xDpn.m), abs(yDpn.m)
+* 2</I><I><SUP>yDpn.e &ndash; xDpn.e</SUP>) <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;
+2</FONT></FONT><FONT SIZE=3><FONT FACE="Times New Roman, serif"><SUP>62</SUP>
+- 1</FONT></FONT></I><FONT SIZE=3><FONT FACE="Times New Roman, serif"><SPAN STYLE="font-style: normal">,
+than</SPAN></FONT></FONT> their exact sum is less then or equal in
+magnitude to <I>2<SUP>62</SUP> &ndash; 1 + 2<SUP>62</SUP> &ndash; 1 =
+2<SUP>63</SUP> &ndash; 2</I><SPAN STYLE="font-style: normal">, so it
+is representable in a </SPAN><I>64</I><SPAN STYLE="font-style: normal">
+bits long integer.</SPAN> If they have different signs and
+<I>max(abs(xDpn.m), abs(yDpn.m) * 2<SUP>yDpn.e &ndash; xDpn.e)</SUP>
+<FONT SIZE=3><FONT FACE="Times New Roman, serif">&le; 2</FONT></FONT><FONT SIZE=3><FONT FACE="Times New Roman, serif"><SUP>63</SUP>
+- 1</FONT></FONT></I><FONT SIZE=3><FONT FACE="Times New Roman, serif"><SPAN STYLE="font-style: normal">,
+the inequality </SPAN><I>abs(abs(x) &ndash; abs(y)) &lt; max(abs(x),
+abs(y)) </I><SPAN STYLE="font-style: normal">holding for all nonzero
+reals </SPAN><I>x</I><SPAN STYLE="font-style: normal"> and </SPAN><I>y</I><SPAN STYLE="font-style: normal">
+implies that</SPAN></FONT></FONT> their exact sum is less than <I><FONT SIZE=3><FONT FACE="Times New Roman, serif">2<SUP>63</SUP>
+- 1</FONT></FONT> </I><SPAN STYLE="font-style: normal">in magnitude,
+so it is again representable in a </SPAN><I>64</I><SPAN STYLE="font-style: normal">
+bits long integer. So in these cases we do cheaper operations on long
+values rather than arbitrary precision integers.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">	</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><FONT SIZE=4>Subtraction</FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN STYLE="font-style: normal">	In
+all the IEEE 754 rounding modes, the identity </SPAN><I>x &ndash; y =
+x + (-y)</I><SPAN STYLE="font-style: normal"> holds true, so we
+</SPAN></FONT>implemented subtraction to simply delegate to the
+addition algorithm.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>Multiplication</FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3>	The correctly
+rounded result <I>nearest</I><SPAN STYLE="font-style: normal"> is</SPAN>
+computed, and the special cases when either one of the operands if
+zero <I>nearest</I><SPAN STYLE="font-style: normal"> is zero or not a
+finite double value, are treated first</SPAN>.</FONT> It remains to
+compute <FONT SIZE=3><FONT FACE="Times New Roman, serif"><I>&#61442;(x
+* y) </I><SPAN STYLE="font-style: normal">rounded to infinity or
+negative infinity </SPAN></FONT></FONT>when <I>nearest</I><SPAN STYLE="font-style: normal">,
+</SPAN><I>x</I><SPAN STYLE="font-style: normal"> and </SPAN><I>y</I><SPAN STYLE="font-style: normal">
+are all finite nonzero double values.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	The
+exact product </SPAN><I>x * y </I><SPAN STYLE="font-style: normal">is
+mathematically equal to </SPAN><I>xDpn.m * yDpn.m * 2<SUP>xDpn.e +
+yDpn.e &ndash; 52</SUP></I><SPAN STYLE="font-style: normal">. The odd
+mantissa can be computed using only integer arithmetic. Remember that
+</SPAN><I>nearest</I><SPAN STYLE="font-style: normal"> is actually
+equal to </SPAN><I>nearestProduct.m * 2<SUP>nearestProduct.e &ndash;
+52</SUP></I><SPAN STYLE="font-style: normal">. We don't actually have
+to compute the exact product </SPAN><I>x * y</I><SPAN STYLE="font-style: normal">;
+it is enough to determine its ordering relation with respect to the
+correctly rounded result. Again, the </SPAN><I>computeOrder </I><SPAN STYLE="font-style: normal">method
+does the comparison for us.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	Some cases are identified
+when the arbitrary precision operations can be avoided:</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>int c1 =
+Formulas.highestSetBit(absMx);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>int c2 =
+Formulas.highestSetBit(absMy);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>if (c1 + c2 <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;</FONT></FONT>
+61) {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>log.finest(&quot;long
+is enough&quot;);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>long exactM =
+xDpn.getMantissa() * yDpn.getMantissa();</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">           
+<I>DoublePrecisionNo exact = new DoublePrecisionNo(exactM, exactE,
+false);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>order =
+exact.compareTo(nearestProduct);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>assert order
+!= 0 || nearest == exact.exactFiniteDoubleValue();</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><I>	</I><SPAN STYLE="font-style: normal">Mathematically,
+the inequalities </SPAN><I>absMx <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;
+2<SUP>c1 + 1</SUP> &ndash; 1 </FONT></FONT></I><FONT SIZE=3><FONT FACE="Times New Roman, serif"><SPAN STYLE="font-style: normal">and
+</SPAN><I>absMy &le; 2</I><I><SUP>c2 + 1</SUP> &ndash; 1</I><SPAN STYLE="font-style: normal">
+imply, </SPAN><I>absMx * absMy</I></FONT></FONT><I> <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;
+2<SUP>c1 + c2 + 2</SUP> - 2<SUP>c1 + 1 </SUP>-<SUP> </SUP>2<SUP>c2 +
+1</SUP> + 1 = f(c1, c2) = (2<SUP>c1 + 1</SUP> &ndash; 1) * (2<SUP>c2
++ 1</SUP> &ndash; 1)</FONT></FONT></I><FONT SIZE=3><FONT FACE="Times New Roman, serif"><SPAN STYLE="font-style: normal">.
+The domain of interest for this function is </SPAN><I>[0..62]x[0..62]</I><SPAN STYLE="font-style: normal">.
+It is clear that </SPAN><I>f</I><SPAN STYLE="font-style: normal"> is
+positive and that it is monotonically increasing with respect to any
+one of its variables: </SPAN><I>f(c1, .) </I><SPAN STYLE="font-style: normal">is
+increasing and also is </SPAN><I>f(., c2)</I><SPAN STYLE="font-style: normal">.
+</SPAN></FONT></FONT>Let <I>g(x) = f(x, n &ndash; x) </I><SPAN STYLE="font-style: normal">where
+</SPAN><I>n</I><SPAN STYLE="font-style: normal"> is a constant
+natural number, greater than </SPAN><I>2</I><SPAN STYLE="font-style: normal">.</SPAN>
+Then <I>g(x) = 2<SUP>n + 2</SUP><SUB> </SUB>&ndash; 2<SUP>x + 1</SUP>
+&ndash; 2<SUP>n &ndash; x + 1</SUP> + 1</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>g'(x) = (&ndash;2</I><I><SUP>x + 1</SUP> + 2<SUP>n &ndash;
+x + 1</SUP>) * ln(2)</I>. The sign of <I>g'</I> indicates that <I>max(g,
+x::natural, x=0..n) = max(g(floor(x/2)), g(ceil(x/2))). </I><SPAN STYLE="font-style: normal">For
+</SPAN><I>n = 61 </I><SPAN STYLE="font-style: normal">we get </SPAN><I>max(g,
+x::natural, x=0..61) = max(g(30),g(31)) = max(9223372030412324865,
+9223372030412324865) = 9223372030412324865 &lt; 9223372036854775807 =
+Long.MAX_VALUE</I><SPAN STYLE="font-style: normal">. For </SPAN><I>n
+= 62</I><SPAN STYLE="font-style: normal">, the maximum value of g is
+greater than </SPAN><I>Long.MAX_VALUE </I><SPAN STYLE="font-style: normal">so
+we cannot increase </SPAN><I>n</I><SPAN STYLE="font-style: normal">
+above </SPAN><I>61</I><SPAN STYLE="font-style: normal">. We have: </SPAN><I>c1
++ c2 &lt;= 61 =&gt; <FONT SIZE=3><FONT FACE="Times New Roman, serif">absMx
+* absMy &le; f(c1, c2) &le; f(c1, 61 &ndash; c1) </FONT></FONT></I><FONT SIZE=3><FONT FACE="Times New Roman, serif"><SPAN STYLE="font-style: normal">because
+f(c1, .) is monotonically increasing. But </SPAN><I>f(c1, </I></FONT></FONT><I>61
+&ndash; c1) = g(c1) <FONT SIZE=3><FONT FACE="Times New Roman, serif">&le;</FONT></FONT>
+9223372030412324865 &lt; Long.MAX_VALUE</I><SPAN STYLE="font-style: normal">.
+Hence the product of </SPAN><I>xDpn.m * yDpn.m</I> cannot overflow if
+computed using 64-bit long integers.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>Division</FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3>	The correctly
+rounded result of the operation <I><FONT FACE="Times New Roman, serif">&#61442;(</FONT>x
+/ y)</I><SPAN STYLE="font-style: normal"> as assigned to </SPAN><I>nearest</I><SPAN STYLE="font-style: normal">.
+Let's assume both </SPAN><I>nearest</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>y</I><SPAN STYLE="font-style: normal"> are finite
+double value, with </SPAN><I>y != 0</I><SPAN STYLE="font-style: normal">,
+the other cases being trivial. Using the multiplication routine, we
+compute </SPAN><FONT FACE="Times New Roman, serif"><I>&#61442;(nearest
+* y)</I><SPAN STYLE="font-style: normal"> in the round-to-negative
+infinity and round-to-infinity, with the results denoted by </SPAN><I>x0</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>x1</I><SPAN STYLE="font-style: normal">. In the
+discussion below, assume, without restricting generality, than </SPAN><I>y
+&gt; 0</I><SPAN STYLE="font-style: normal">; for negative </SPAN><I>y</I><SPAN STYLE="font-style: normal">
+the discussion is similar. Note that </SPAN><I>x0 = x1</I><SPAN STYLE="font-style: normal">
+or </SPAN><I>x1 = next(x0)</I><SPAN STYLE="font-style: normal">. The
+initial numerator </SPAN><I>x</I><SPAN STYLE="font-style: normal">
+can be less than </SPAN><I>x0</I><SPAN STYLE="font-style: normal">,
+greater than </SPAN><I>x1</I><SPAN STYLE="font-style: normal">, or in
+the closed interval </SPAN><I>[x0, x1]</I><SPAN STYLE="font-style: normal">.</SPAN></FONT></FONT>
+If <I>x0 == x1</I><SPAN STYLE="font-style: normal"> the closed
+interval being degenerated, x can reside in it iff </SPAN><I>x0 = x1
+= x </I><SPAN STYLE="font-style: normal">and </SPAN><I>fl(nearest *
+y) </I><SPAN STYLE="font-style: normal">was computed exactly (</SPAN><I>nearest
+* y = x</I><SPAN STYLE="font-style: normal"> exactly).</SPAN>
+Otherwise, if <I>x0 &lt; x1</I><SPAN STYLE="font-style: normal">,
+than </SPAN><I>x = x0</I><SPAN STYLE="font-style: normal"> or </SPAN><I>x
+= x1</I><SPAN STYLE="font-style: normal">, because </SPAN><I>x </I><SPAN STYLE="font-style: normal">is
+a double number, and </SPAN><I>x0</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>x1</I><SPAN STYLE="font-style: normal"> are consecutive
+double numbers; in this case </SPAN><I>x0 &lt; nearest &lt; x1 </I><SPAN STYLE="font-style: normal">as
+</SPAN><I>fl(nearest * y) </I><SPAN STYLE="font-style: normal">was
+not computed exactly (mathematically, </SPAN><I>nearest * y != x</I><SPAN STYLE="font-style: normal">).</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>// use a[start]
+and a[start + 1] as temporary variables</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>multiply(nearest,
+y, a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>double x0 =
+a[start], x1 = a[start + 1];</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>if (x &lt; x0 ||
+(x == x0 &amp;&amp; x0 &lt; x1)) {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>// x is less
+than the exact product nearest * y</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>if (y &gt; 0)
+{</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">                <I>//
+nearest is too big</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">               
+<I>tooBig(nearest, a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>} else {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">                <I>assert y
+&lt; 0;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">                <I>//
+nearest is too small</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">               
+<I>tooSmall(nearest, a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>return;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>if (x &gt; x1 ||
+(x == x1 &amp;&amp; x0 &lt; x1)) {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>// x is
+greater than the exact product nearest * y</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>if (y &gt; 0)
+{</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">                <I>//
+nearest is too small</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">               
+<I>tooSmall(nearest, a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>} else {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">                <I>assert y
+&lt; 0;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">                <I>//
+nearest is too big</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">               
+<I>tooBig(nearest, a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>return;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>// nearest is
+exact</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>assert x0 == x &amp;&amp;
+x == x1;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>exactValue(nearest,
+a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><FONT FACE="Times New Roman, serif"><SPAN STYLE="font-style: normal">	This
+way we realize what is the order relation between </SPAN><I>x</I><SPAN STYLE="font-style: normal">
+and the exact product </SPAN><I>nearest * y</I><SPAN STYLE="font-style: normal">.
+From this information we deduce in which direction the correctly
+rounded </SPAN><I>nearest </I><SPAN STYLE="font-style: normal">result
+was rounded if at all.</SPAN></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Square</FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>	Currently
+it is simply implemented as <I>square(x) = x * x</I>, but a
+specialized routine is on the todos list for future versions.</FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Square
+root</FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><FONT FACE="Times New Roman, serif"><SPAN STYLE="font-style: normal">	In
+all rounding modes, except that </SPAN><I>sqrt(-0)</I><SPAN STYLE="font-style: normal">
+shall be </SPAN><I>-0</I><SPAN STYLE="font-style: normal">, every
+valid square root shall have a positive sign.</SPAN></FONT></FONT>
+First we check for a zero parameter:</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>if (x == 0) {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>// keep the
+sign of positive or negative zero</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>exactValue(x,
+a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>return;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><I>	</I><SPAN STYLE="font-style: normal">Next
+we compute the correctly rounded result of </SPAN><I>fl(sqrt(x))</I><SPAN STYLE="font-style: normal">
+and give special treatement to NaN and infinity.</SPAN> Assuming that
+both <I>x</I><SPAN STYLE="font-style: normal"> and </SPAN><I>nearest</I><SPAN STYLE="font-style: normal">
+are finite positive double numbers, we compute </SPAN><I>fl(square(nearest))</I><SPAN STYLE="font-style: normal">
+in the round-to-negative infinity and round-to-infinity modes</SPAN>.
+Let the lower and upper bound be <I>x0</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>x1</I><SPAN STYLE="font-style: normal">.</SPAN> The
+discussion of <SPAN STYLE="font-style: normal">the ordering relation
+between </SPAN><I>x</I><SPAN STYLE="font-style: normal">, </SPAN><I>x0</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>x1</I><SPAN STYLE="font-style: normal"> is similar to
+that from the division routine:</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>assert
+Formulas.isFinite(x) &amp;&amp; Formulas.isFinite(nearest);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>assert x &gt; 0
+&amp;&amp; nearest &gt; 0;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>// use a[start]
+and a[start + 1] as temporary variables</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>square(nearest,
+a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>double x0 =
+a[start], x1 = a[start + 1];</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>if (x &lt; x0 ||
+(x == x0 &amp;&amp; x0 &lt; x1)) {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>// x is less
+than the exact square of nearest</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>// nearest is
+too big</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>tooBig(nearest,
+a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>return;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>if (x &gt; x1 ||
+(x == x1 &amp;&amp; x0 &lt; x1)) {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>// x is
+greater than the exact square of nearest</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>// nearest is
+too small</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">           
+<I>tooSmall(nearest, a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>return;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>// nearest is
+exact</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>assert x0 == x &amp;&amp;
+x == x1;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>exactValue(nearest,
+a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><FONT SIZE=4>Exponential
+Function</FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal"><FONT SIZE=3 STYLE="font-size: 13pt">	The
+following </FONT></SPAN>result was first established by the german
+mathematician Lambert, Johann in 1761:</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	<I>Theorem 2</I><SPAN STYLE="font-style: normal">.
+If </SPAN><I>p/q</I><SPAN STYLE="font-style: normal"> is a non zero
+rational number then </SPAN><I>e<SUP>p/q</SUP></I><SPAN STYLE="font-style: normal">
+is irrational.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	Actually, some stronger
+statements have been proved about the irrationality of the
+exponential function. The next statement is relevant to continued
+fraction arithmetic:</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	<I>Theorem 3</I><SPAN STYLE="font-style: normal">.
+</SPAN><I>e<FONT FACE="Times New Roman, serif"><SUP>&beta;0</SUP>&alpha;<SUB>1</SUB><SUP>&beta;1</SUP>...&alpha;<SUB>n</SUB><SUP>&beta;n</SUP></FONT></I><FONT FACE="Times New Roman, serif"><SPAN STYLE="font-style: normal">
+is transcendental for any nonzero algebraic numbers </SPAN><I>&alpha;</I><I><SUB>1</SUB>,
+<SUB> </SUB>..., &alpha;<SUB>n, </SUB>&beta;<SUB>0</SUB>, <SPAN STYLE="font-weight: medium">&beta;</SPAN><SPAN STYLE="font-weight: medium"><SUB>1</SUB>,<SUB>
+</SUB>..., &beta;<SUB>n</SUB></SPAN></I><SPAN STYLE="font-weight: medium"><SPAN STYLE="font-style: normal">.</SPAN></SPAN></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN STYLE="font-style: normal">	Because
+any finite double number is actually a rational one, </SPAN><I>e<SUP>x</SUP>
+</I><SPAN STYLE="font-style: normal">is irrational (and thus not a
+floating point number) for any nonzero finite double number. So </SPAN><I>x
+== 0</I><SPAN STYLE="font-style: normal"> is a special case treated
+first.</SPAN></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	Let <I>mathexp</I><SPAN STYLE="font-style: normal">
+denote the double precision value </SPAN><I>Math.exp(x)</I><SPAN STYLE="font-style: normal">.
+According to the javadocs of the </SPAN><I>Math</I><SPAN STYLE="font-style: normal">
+class, </SPAN><I>mathexp</I><SPAN STYLE="font-style: normal"> has an
+error less then </SPAN><I>1 ulp</I><SPAN STYLE="font-style: normal">.</SPAN>
+That means we only have left to find out in which direction did
+<I>Math.exp(x)</I><SPAN STYLE="font-style: normal"> round the result.
+It was certainly rounded, because e<SUP>x</SUP> is irrational as
+mentioned above.</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN STYLE="font-style: normal">	For
+positive values of </SPAN><I>x</I><SPAN STYLE="font-style: normal">,
+</SPAN><I>e</I><I><SUP>x</SUP> &gt; 1</I><SPAN STYLE="font-style: normal">.
+We computed two constants for this case. One is </SPAN><I>EXP_SMALL_ONE
+= 2</I><I><SUP>-52</SUP></I><SPAN STYLE="font-style: normal"> with
+the property that </SPAN><I>1 &lt; e</I><I><SUP>x</SUP> &lt; next(1)</I><SPAN STYLE="font-style: normal">,
+for all </SPAN><I>0 &lt; x &lt; EXP_SMALL_ONE</I><SPAN STYLE="font-style: normal">,
+</SPAN><I>x</I><SPAN STYLE="font-style: normal"> double precision
+value and </SPAN><I>next(1) &lt; e</I><I><SUP>x</SUP></I><SPAN STYLE="font-style: normal">,
+for all </SPAN><I>x <FONT FACE="Times New Roman, serif">&ge;</FONT>
+next( EXP_SMALL_ONE). </I><SPAN STYLE="font-style: normal">The other
+constant is </SPAN><I>EXP_POSITIVE_INFINITY = 709.7827128933841</I><SPAN STYLE="font-style: normal">
+with the property that </SPAN><I>Double.MAX_VALUE &lt; e</I><I><SUP>x</SUP></I><SPAN STYLE="font-style: normal">,
+for all </SPAN><I>x <FONT FACE="Times New Roman, serif">&ge;</FONT>
+EXP_POSITIVE_INFINITY</I></FONT> and <I>e<SUP>x </SUP>&lt;
+<FONT SIZE=3>Double.MAX_VALUE</FONT></I><FONT SIZE=3><SPAN STYLE="font-style: normal">,
+for all </SPAN><I>x &lt; EXP_POSITIVE_INFINITY</I><SPAN STYLE="font-style: normal">,
+</SPAN><I>x</I><SPAN STYLE="font-style: normal"> double precision
+value.</SPAN></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN STYLE="font-style: normal">	For
+negative values of </SPAN><I>x</I><SPAN STYLE="font-style: normal">,
+</SPAN><I>e</I><I><SUP>x</SUP> &lt; 1</I><SPAN STYLE="font-style: normal">.
+Again, we computed two constants. One is </SPAN><I>EXP_BIG_ONE =
+-2</I><I><SUP>-53</SUP></I><SPAN STYLE="font-style: normal"> with the
+property that </SPAN><I>previous(1) &lt; e</I><I><SUP>x</SUP> &lt; 1</I><SPAN STYLE="font-style: normal">,
+for all </SPAN><I>EXP_BIG_ONE <FONT FACE="Times New Roman, serif">&le;
+</FONT>x &lt; 0</I><SPAN STYLE="font-style: normal">, </SPAN><I>x</I><SPAN STYLE="font-style: normal">
+double precision value and </SPAN><I>e</I><I><SUP>x</SUP> &lt;
+previous(1)</I><SPAN STYLE="font-style: normal">, for all </SPAN><I>x
+<FONT FACE="Times New Roman, serif">&le;</FONT>
+previous(EXP_BIG_ONE). </I><SPAN STYLE="font-style: normal">The other
+constant is </SPAN><I>EXP_SMALL_ZERO = -744.4400719213813</I><SPAN STYLE="font-style: normal">
+with the property that </SPAN><I>e</I><I><SUP>x </SUP>&lt;
+Double.MIN_VALUE</I><SPAN STYLE="font-style: normal">, for all </SPAN><I>x
+<FONT FACE="Times New Roman, serif">&le;</FONT> EXP_SMALL_ZERO</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>e</I><I><SUP>x </SUP>&gt; Double.MIN_VALUE</I><SPAN STYLE="font-style: normal">,
+for all </SPAN><I>x <FONT FACE="Times New Roman, serif">&ge;</FONT>
+next(EXP_SMALL_ZERO)</I><SPAN STYLE="font-style: normal">, </SPAN><I>x</I><SPAN STYLE="font-style: normal">
+double precision value.</SPAN></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><FONT SIZE=3>	As
+this project also contains a library for simple continued fraction
+expansions, the first implementation of the exponential function is
+based on this technique. Future versions of this library will include
+three steps, reduction, approximation and reconstruction, algorithms
+for the exponential and other transcendental functions.</FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN STYLE="font-style: normal">	Having
+eliminated the cases so far described, we know for sure that
+</SPAN><FONT FACE="Times New Roman, serif"><I>&#61442;(exp(x))</I><SPAN STYLE="font-style: normal">
+is a double finite value in all rounding modes. We compute the simple
+continued fraction expansion of </SPAN><I>mathexp</I><SPAN STYLE="font-style: normal">,
+and we also compute the simple continued fraction expansion of </SPAN><I>e</I></FONT><FONT FACE="Times New Roman, serif"><I><SUP>x</SUP>.
+</I><SPAN STYLE="font-style: normal">The simple comparison of the two
+continued fraction expansions </SPAN></FONT></FONT>reveals the
+direction in which <I>mathexp</I><SPAN STYLE="font-style: normal">
+was rounded by the computation </SPAN><I>Math.exp(x)</I><SPAN STYLE="font-style: normal">:</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>assert
+Formulas.isFinite(mathexp) &amp;&amp; mathexp &gt; 0;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>assert
+(EXP_SMALL_ZERO &lt; x &amp;&amp; x &lt; EXP_BIG_ONE)</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">                <I>||
+(EXP_SMALL_ONE &lt;= x &amp;&amp; x &lt; EXP_POSITIVE_INFINITY);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>ContinuedFraction
+exact = ContinuedFraction.exponential(x);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>Rational
+mathexpRational = Rational.create(mathexp);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>int cmp =
+mathexpRational.expansion().compareTo(exact);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>// Lamber
+established in 1761 for the first time that exp(r) is irrational,</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>// for any
+nonzero rational number r.</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>assert cmp != 0;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>if (cmp &lt; 0) {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">           
+<I>tooSmall(mathexp, a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>} else {</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>assert cmp &gt;
+0;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">            <I>tooBig(mathexp,
+a, start);</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>}</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">        <I>assert a[0] &gt;
+0 &amp;&amp; a[1] &lt; Double.POSITIVE_INFINITY &amp;&amp; a[0] != 1
+&amp;&amp; a[1] != 1;</I></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">	If one
+does not trust the error bounds documented by the <I>Math</I> class,
+the algorithm can be easily adapted to compute the rounded result
+without relying on the <I>Math.exp</I> method.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4><I>precisefloating.directedrounding.ManagedLooseRoundingModeControl</I></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><FONT SIZE=3>	</FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><SPAN STYLE="font-style: normal">	For
+every operation, we use the Java operators or the value computed by
+the Math class if the operation is a function, and return the
+next/previous double number. This works because the </SPAN><I>Math
+</I><SPAN STYLE="font-style: normal">methods we use have relative
+error less than 1 ulp of the correctly rounded result.</SPAN></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><FONT SIZE=3><I>	</I><SPAN STYLE="font-style: normal">Even
+if the Math class returns the exact results if possible, we might not
+notice it and return an open interval. This implementation is
+optimized for performance, rather than accuracy, and it is thread
+safe as it uses no internal state.</SPAN></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in; font-style: normal"><FONT FACE="Times New Roman, serif"><FONT SIZE=4>References</FONT></FONT></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in">W. Kahan, Joseph D.
+	Darcy, <I>How Java&rsquo;s Floating-Point Hurts Everyone Everywhere</I>,
+	<A HREF="http://www.cs.berkeley.edu/~wkahan/JAVAhurt.pdf"><SPAN STYLE="font-style: normal">http://www.cs.berkeley.edu/~wkahan/JAVAhurt.pdf</SPAN></A></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in">Sun Microsystems, Inc.,
+	<I>Numerical Computation Guide,
+	</I><A HREF="http://docs.sun.com/source/806-3568/ncgTOC.html"><SPAN STYLE="font-style: normal">http://docs.sun.com/source/806-3568/ncgTOC.html</SPAN></A></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">John
+	Harrison, Ted Kubaska, Shane Story, Ping Tak Peter Tang, <I>The
+	Computation of Transcendental Functions on the IA-64 Architecture,
+	</I><A HREF="http://www.intel.com/technology/itj/q41999/pdf/transendental.pdf"><SPAN STYLE="font-style: normal">http://www.intel.com/technology/itj/q41999/pdf/transendental.pdf</SPAN></A></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">Annie
+	Cuyt, Peter Kuterna, Brigitte Verdonk, Dennis Verschaeren, </SPAN><I>Underflow
+	Revisited,</I> <A HREF="http://citeseer.nj.nec.com/cuyt99underflow.html"><SPAN STYLE="font-style: normal">http://citeseer.nj.nec.com/cuyt99underflow.html</SPAN></A></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in"><I>Irrationality
+	proofs</I>,
+	<A HREF="http://numbers.computation.free.fr/Constants/Miscellaneous/irrationality.html"><SPAN STYLE="font-style: normal">http://numbers.computation.free.fr/Constants/Miscellaneous/irrationality.html</SPAN></A></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in">Douglas M. Priest,
+	<I>Algorithms for Arbitrary Precision Floating Point Arithmetic,
+	</I><A HREF="http://citeseer.nj.nec.com/priest91algorithms.html"><SPAN STYLE="font-style: normal">http://citeseer.nj.nec.com/priest91algorithms.html</SPAN></A></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">Joseph
+	D. Darcy,</SPAN><I> Writing robust IEEE recommended functions in
+	100% Pure Java, </I><A HREF="http://citeseer.nj.nec.com/156819.html"><SPAN STYLE="font-style: normal">http://citeseer.nj.nec.com/156819.html</SPAN></A></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in">Michael Parks,
+	<I>Number-theoretic Test Generation for Directed Rounding,
+	</I><A HREF="http://www.geocities.com/ieee754/parks-dirnd-ieeetc.ps"><SPAN STYLE="font-style: normal">http://www.geocities.com/ieee754/parks-dirnd-ieeetc.ps</SPAN></A></P>
+	<LI><P ALIGN=LEFT STYLE="margin-bottom: 0in">Wolfram Research, Inc,
+	<I>Eric Weisstein's World of Mathematics</I>,
+	<A HREF="http://mathworld.wolfram.com/">http://mathworld.wolfram.com</A></P>
+	<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"></P>
+</OL>
+<P ALIGN=RIGHT STYLE="margin-bottom: 0in"><FONT SIZE=3><I>Project:
+<B>PreciseFloating</B> - Author: <B>Daniel Aioanei</B>
+(<A HREF="mailto:aioaneid@go.ro">aioaneid@go.ro</A>)</I></FONT></P>
+<P ALIGN=RIGHT STYLE="margin-bottom: 0in"><BR>
+</P>
+</BODY>
+</HTML>

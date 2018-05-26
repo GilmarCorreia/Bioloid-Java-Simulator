@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 1.1.0  (Win32)">
+	<META NAME="CREATED" CONTENT="20030928;19092900">
+	<META NAME="CHANGED" CONTENT="20031002;12290390">
+	<STYLE>
+	<!--
+		@page { size: 8.27in 11.69in; margin-left: 1.25in; margin-right: 1.25in; margin-top: 1in; margin-bottom: 1in }
+		P { margin-bottom: 0.08in }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=4>Numbers as
+streams</FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0in"><BR>
+</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	One approach to exact real
+arithmetic is using <I>streams</I><SPAN STYLE="font-style: normal">
+as a data structure to represent numbers. Even if a machine has
+finite resources and cannot store an infinite sequences, such
+infinite streams can represent programs that successively generate
+the elements of the sequence. The stream computed on demand are often
+referred to as </SPAN><I>computable streams</I><SPAN STYLE="font-style: normal">.
+Some possible representations are </SPAN><I>continued fractions</I><SPAN STYLE="font-style: normal">,
+</SPAN><I>B-adic number streams,</I><SPAN STYLE="font-style: normal">
+</SPAN><I>linear fractional transformations</I><SPAN STYLE="font-style: normal">
+and </SPAN><I>continued logarithms</I><SPAN STYLE="font-style: normal">
+(a mutation of continued fractions that instead of the integer
+partial quotients uses only </SPAN><I>0</I><SPAN STYLE="font-style: normal">'s
+and </SPAN><I>1</I><SPAN STYLE="font-style: normal">'s).</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal">	A
+continued fraction is actually a stream of numbers. The arithmetic
+with continued fractions is harder than the arithmetic on numbers in
+positional notations, but some advantages arise immediately. First of
+all, some irrational numbers can be represented exactly as little
+programs to provide the partial quotients on demand. Another
+advantage is the possibility to cascade several routines and produce
+an output stream of partial quotients at a low cost. The user doesn't
+have to decide in advance how much precision it necessary, preventing
+wasting time and effort on more precision than it is actually
+required.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in"><SPAN STYLE="font-style: normal">	Currently,
+we support only simple continued fractions, (</SPAN><I>simple</I><SPAN STYLE="font-style: normal">
+because all the numerators are one) but expecting to add nonregular
+continued fraction support in future versions of the project. We do
+</SPAN>not actually use <I>java.io.Stream</I> to represent a
+continued fraction, as one might expect. Instead, we derive our
+numbers from <I>java.util.Iterator, </I>usually <SPAN STYLE="font-style: normal">iterating
+over the partial quotients of continued fraction expansions</SPAN>.</P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in">	The <I>ContinuedFraction</I>
+represents a simple continued fraction that can be reused and
+supports the elementary arithmetic operations. The abstract class
+<I>PartialQuotients</I><SPAN STYLE="font-style: normal"> interface
+represents a (potentially infinite) stream of partial quotients.
+While a <I>PartialQuotients</I> instance is consumable, a
+</SPAN><I>ContinuedFraction</I><SPAN STYLE="font-style: normal">
+knows to generate its partial quotients as many times as required.
+<I>ContinuedFraction </I><SPAN STYLE="font-style: normal">will
+probably be refactored to </SPAN>implement <I>Number </I><SPAN STYLE="font-style: normal">in
+future versions.</SPAN></SPAN></P>
+<P ALIGN=LEFT STYLE="margin-bottom: 0in; font-style: normal"><BR>
+</P>
+<P ALIGN=RIGHT STYLE="margin-bottom: 0in"><FONT SIZE=3><I>Project:
+<B>PreciseFloating</B> - Author: <B>Daniel Aioanei</B>
+(<A HREF="mailto:aioaneid@go.ro">aioaneid@go.ro</A>)</I></FONT></P>
+</BODY>
+</HTML>
