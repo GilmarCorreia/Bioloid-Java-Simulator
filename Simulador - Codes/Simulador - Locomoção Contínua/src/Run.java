@@ -74,6 +74,10 @@ public class Run {
 				degrees[16]=-0.000602821242505626*Math.pow(i.doubleValue(),6)+0.0405315649727053*Math.pow(i.doubleValue(),5)-0.916931723020958 *Math.pow(i.doubleValue(),4)+8.3576698861698*Math.pow(i.doubleValue(),3)-25.507120415259*Math.pow(i.doubleValue(),2)-1.29495830014807*i.doubleValue()+497.088587623408;
 				degrees[17]=-0.00021958932773343*Math.pow(i.doubleValue(),6)+0.0135980370756124*Math.pow(i.doubleValue(),5)-0.239784506804081 *Math.pow(i.doubleValue(),4)+0.466436883005924*Math.pow(i.doubleValue(),3)+18.9979103475509*Math.pow(i.doubleValue(),2)-113.421209371814*i.doubleValue()+620.07665583061;
 				
+				degrees[15] = 0.00000000000000169781*Math.pow(i.doubleValue(),10)-0.00000000000114195557*Math.pow(i.doubleValue(),9)+0.0000000003205168261*Math.pow(i.doubleValue(),8)-0.00000004861846167056*Math.pow(i.doubleValue(),7)+0.00000431745554052764*Math.pow(i.doubleValue(),6)-0.000227785393706015*Math.pow(i.doubleValue(),5)+0.00695986354954629*Math.pow(i.doubleValue(),4)-0.115867307099457*Math.pow(i.doubleValue(),3)+0.98139855231603*Math.pow(i.doubleValue(),2)-5.02402746704548*Math.pow(i.doubleValue(),1) + 408.282838474984;
+				degrees[16] = -0.00000000002207423705*Math.pow(i.doubleValue(),6) + 0.00000013940017298063*Math.pow(i.doubleValue(),5)-0.0000388516514384058*Math.pow(i.doubleValue(),4)+0.00287853127038045*Math.pow(i.doubleValue(),3)+0.0113291712063454*Math.pow(i.doubleValue(),2)-4.03370820349286*Math.pow(i.doubleValue(),1)+484.338989789182;
+				degrees[17]= 0.00000000106620325477*Math.pow(i.doubleValue(),6)- 0.00000039137397328349 *Math.pow(i.doubleValue(),5) + 0.00005975188055747080*Math.pow(i.doubleValue(),4) - 0.00578251928904135 *Math.pow(i.doubleValue(),3) + 0.372719505143808 *Math.pow(i.doubleValue(),2) - 10.2603081750749*Math.pow(i.doubleValue(),1) + 541.359629594152; 
+				
 				func.setDegrees(1000,degrees);
 				//t = t + 1;
 				//func.readMotors();
